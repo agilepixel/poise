@@ -1,3 +1,4 @@
-# Dave's Webpack Grid #
+# Dave Grid #
 
-A quick experiment to try and turn Dave's grid into a reusable module for Webpack
+[![devDependencies Status](https://david-dm.org/agilepixel/dave-grid/dev-status.svg)](https://david-dm.org/agilepixel/dave-grid?type=dev)
+[![dependencies Status](https://david-dm.org/agilepixel/dave-grid/status.svg)](https://david-dm.org/agilepixel/dave-grid)

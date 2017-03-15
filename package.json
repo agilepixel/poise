@@ -1,9 +1,8 @@
 {
-  "name": "daves-webpack-grid",
+  "name": "dave-grid",
   "version": "0.0.1",
-  "private": true,
   "main": "style.scss",
-  "description": "A grid by Dave",
+  "description": "A reusable grid system to use with Webpack, based on inuit.css and FOX-CSS",
   "scripts": {
     "test": "webpack --hide-modules"
   },
@@ -22,10 +21,10 @@
     "sass-mq": "~3.3.0"
   },
   "devDependencies": {
-    "css-loader": "^0.27.1",
-    "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.3",
-    "style-loader": "^0.13.2",
-    "webpack": "^2.2.1"
+    "css-loader": "~0.27.0",
+    "node-sass": "~4.5.0",
+    "sass-loader": "~6.0.0",
+    "style-loader": "~0.13.0",
+    "webpack": "~2.2.0"
   }
 }
