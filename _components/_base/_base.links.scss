@@ -1,0 +1,7 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+a{
+  @include link-colors(palette(links));
+  text-decoration: none;
+}

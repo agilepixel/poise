@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    #BURGER
+\*------------------------------------*/
+
+// Vendor prefixes
+$sass-burger-add-vendor-prefixes: true !default;
+// Burger
+@mixin burger($width: 15px, $height: 5px, $gutter: 3px, $color: #000, $border-radius: 0, $transition-duration: 1s) {
+    $burger-height: $height !global;
+    $burger-gutter: $gutter !global;
+    position: relative;
+    margin-top: $height + $gutter;
+    margin-bottom: $height + $gutter;
+    user-select: none;
+    &,
+    &:before,
+    &:after {
+        display: inline-block;
+        width: $width;
+        height: $height;
+        background-color: $color;
+        vertical-align: middle;
+        @if $border-radius !=0 {
+            border-radius: $border-radius;
+        }
+        transition-property: background-color,
+        transform;
+    }
+    &:before,
+    &:after {
+        position: absolute;
+        content: "";
+    }
+    &:before {
+        top: -($height + $gutter);
+    }
+    &:after {
+        top: $height + $gutter;
+    }
+}
+
+// Select parts of the burger
+@mixin burger-parts {
+    &,
+    &:before,
+    &:after {
+        @content;
+    }
+}
+
+@mixin burger-top {
+    &:before {
+        @content;
+    }
+}
+
+@mixin burger-middle {
+    & {
+        @content;
+    }
+}
+
+@mixin burger-bottom {
+    &:after {
+        @content;
+    }
+}
+
+// Burger animations
+@mixin burger-to-cross {
+    & {
+        background-color: transparent;
+    }
+    &:before {
+        transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+    }
+    &:after {
+        transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+    }
+}
+
+.burger {
+    position: relative;
+    display: inline-block;
+    &--icon {
+        @include burger($width: 22px, $height: 2px, $gutter: 6px, $color: palette(site, brand));
+        margin: 0;
+        left: 0;
+        .active & {
+            @include burger-to-cross;
+            &:before,
+            &:after {
+                left: 0;
+                background: palette(site, black);
+            }
+        }
+    }
+    &.active {
+        background: palette(site, black);
+    }
+}

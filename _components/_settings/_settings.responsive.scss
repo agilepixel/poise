@@ -1,0 +1,17 @@
+///*------------------------------------*\
+//    #SETTINGS-RESPONSIVE
+//\*------------------------------------*/
+
+/* MQ breakpoints */
+$mq-breakpoints: (
+    navfix:             376px,
+    mobilePortrait:     480px,
+    mobile:             668px,
+    tabletPortrait:     769px,
+    tablet:             1025px,
+    desktop:            1200px,
+    desktop13:          1366px,
+    desktop14:          1440px,
+    desktop16:          1600px,
+    wide:               1920px
+) !default;

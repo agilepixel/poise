@@ -1,0 +1,31 @@
+{
+  "name": "daves-webpack-grid",
+  "version": "0.0.1",
+  "private": true,
+  "main": "style.scss",
+  "description": "A grid by Dave",
+  "scripts": {
+    "test": "webpack --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agilepixel/dave-grid.git"
+  },
+  "author": "David Clough <dave@agilepixel.io>",
+  "contributors": [
+    "Richard Brown <richard@agilepixel.io>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/agilepixel/dave-grid",
+  "dependencies": {
+    "normalize.css": "~5.0.0",
+    "sass-mq": "~3.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.27.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1"
+  }
+}

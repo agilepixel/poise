@@ -1,0 +1,98 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+
+/**
+ * A simple button object.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-btn-namespace: $inuit-namespace !default;
+$inuit-btn-padding: space(site) !default;
+$inuit-btn-background: #4a8ec2 !default;
+$inuit-btn-color: #fff !default;
+$inuit-btn-border-width: 1px !default;
+$inuit-btn-border-style: solid !default;
+$inuit-btn-border-color: $inuit-btn-background !default;
+$inuit-btn-radius: 0 !default;
+// Here we set a variable assuming that `box-sizing: border-box;` is not set
+// globally. If it has been previously been defined, the following variable will
+// be overriden and will be set to `true`.
+$inuit-global-border-box: false !default;
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+
+.button,
+.btn,
+%btn {
+    @include font-size(size(site, medium), 2);
+    @include link-colors(palette(site, content-inverse));
+    display: block;
+    /* [1] */
+    vertical-align: middle;
+    /* [2] */
+    text-align: center;
+    /* [4] */
+    /* [4] */
+    cursor: pointer;
+    /* [5] */
+    overflow: visible;
+    /* [6] */
+    padding: 0;
+    /* [7] */
+    /****
+    * If there's a colour missing from the pallette, add it ;)
+    * try not to use direct colour references if it can be avoided
+    ****/
+    background-color: #D8232A;
+    border: none;
+    /* [4] */
+    text-transform: uppercase;
+    transition: all 0.4s ease-in;
+    position: relative;
+    margin-bottom: space(site);
+    font-weight: 700;
+    border-radius: 0px;
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid #a7a9ab;
+    border-radius: 0;
+    width: 120px;
+    text-transform: none;
+    font-weight: 100;
+    margin: 0 auto;
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        /* [4] */
+        color: palette(site, content-inverse);
+    }
+    &:hover {}
+    &--white {
+        color: #58585b;
+    }
+}
+
+
+/**
+ * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+
+.#{$inuit-btn-namespace}btn::-moz-focus-inner,
+%#{$inuit-btn-namespace}btn::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}

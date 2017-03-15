@@ -1,0 +1,56 @@
+/*-------------------------*/
+/* +GRID IE9               */
+/*-------------------------*/
+
+// IE9 support - use with conditional classes
+// This makes use of inline-blocks (white space is removed with font-size 0)
+  .grid {
+    font-size: 0;
+    &-center{
+      text-align: center;
+    }
+  }
+
+  [class*="grid-reverse"] {
+    direction: rtl;
+
+    > * {
+      direction: ltr;
+    }
+  }
+
+  [class*="col"] {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+// Different column sizes
+@each $size in $column-sizes {
+  $roundsize: floor($size);
+  .col-#{$roundsize} {
+     width: #{$size}%;
+  }
+}
+
+@each $breakpoint, $value in $grid-breakpoints {
+    @include mq($until: $value) {
+    @each $size in $column-sizes {
+      $roundsize: floor($size);
+        .col-#{$roundsize}-#{$breakpoint} {
+          width: #{$size}%;
+        }
+
+        .grid-start-#{$breakpoint} {
+          text-align: left;
+        }
+
+        .grid-center-#{$breakpoint}, .grid-between-#{$breakpoint}, .grid-around-#{$breakpoint} {
+          text-center: right;
+        }
+      }
+    }
+  }
+
+  .col {
+    width: 100%;
+  }

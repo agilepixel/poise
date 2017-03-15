@@ -1,0 +1,61 @@
+///*------------------------------------*\
+//    #DEFAULTS
+//\*------------------------------------*/
+//Fonts
+$sans-serif: "Montserrat",
+sans-serif !default;
+$helvetica-serif: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif !default;
+$serif: "Georgia",
+Cambria,
+Times New Roman,
+Times,
+serif !default;
+//Spacing
+@function space($space, $default: 'base') {
+    @return map-get(map-get($spacing, $space), $default);
+}
+
+$spacing: ( site: ( base: 12px, gutter: 12px, third: 4px, brand: 9px, half: 6px, mobile-brand: 19px, onehalf: 18px, double: 24px, doublehalf: 30px, triple: 36px, quad: 48px, tablet: 171px, headertop: 39px, medium: 22px, hero: 5%, full-width: 2%, header: 113px //89px + 24
+), negative: ( base: -12px, third: -4px, brand: -8px, half: -6px, onehalf: -18px, double: -24px, triple: -36px, quad: -48px)) !default;
+// Namespace.
+//
+// Would you like inuitcss’ classes to be prepended with a namespace? If so,
+// define it here.
+$inuit-namespace: null !default;
+$gutter: space(site) !default;
+//Object Depth used to layer obecjts
+@function depth($depth, $default: 'base') {
+    @return map-get(map-get($depths, $depth), $default);
+}
+
+$depths: ( site: ( base: 1, aboveAll: 100, behind: -1, zero: 0, above: 10, plainCrazy: 999999)) !default;
+// GRID
+// Default margin between elements
+$grid-gutter: 16 !default;
+// Default breakpoints for s, m and l columns
+$grid-breakpoints: () !default;
+$column-sizes: 8,
+10,
+12,
+16.66667,
+20,
+25,
+30,
+33.03334,
+40,
+50,
+58.33334,
+60,
+63.33334,
+66.66667,
+70,
+75,
+80,
+88,
+90,
+100;
+$grid-position: (start: flex-start, center: center, end: flex-end, between: space-between, around: space-around) !default;
+$grid-position: (top: flex-start, center: center, bottom: flex-end) !default;

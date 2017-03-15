@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #HIDE
+\*------------------------------------*/
+
+.hide{
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  &.active{
+    max-height: 9000px;
+    opacity: 1;
+    display: inline-block;
+  }
+}
+
+[class^="show-"], [class*=" show-"] {
+  display: none;
+}

@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+.nav {
+  width: 100%;
+  display: block;
+  padding: 24px 0 0 54px;
+  position: relative;
+  z-index: 90;
+  transform: translateZ(50px);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.ubermenu .ubermenu-colgroup .ubermenu-column,
+.ubermenu .ubermenu-custom-content-padded,
+.ubermenu .ubermenu-nonlink,
+.ubermenu .ubermenu-retractor,
+.ubermenu .ubermenu-submenu-padded,
+.ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target,
+.ubermenu .ubermenu-target,
+.ubermenu .ubermenu-widget,
+.ubermenu-responsive-toggle {
+  @include font-size(size(site, small), 1.2);
+  color: palette(site, content-inverse);
+}
+
+.ubermenu-main.ubermenu-transition-fade .ubermenu-item .ubermenu-submenu-drop {
+  margin-top: 0;
+  background: rgba(0, 0, 0, .8);
+}
+
+.ubermenu-item-5600 > .ubermenu-submenu > .ubermenu-item-5676 {
+  width: 25%;
+}
+
+.ubermenu.ubermenu-disable-submenu-scroll .ubermenu-item > .ubermenu-submenu.ubermenu-submenu-type-mega {
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+}
+
+.ubermenu .ubermenu-submenu .ubermenu-target {
+  padding: 0 0 12px;
+}
+
+.ubermenu.ubermenu-disable-submenu-scroll .ubermenu-active > .ubermenu-submenu.ubermenu-submenu-type-mega {
+  max-height: none;
+}
+
+.ubermenu-item-5600 > .ubermenu-submenu > .ubermenu-item-5658 {
+  width: 30%;
+}
+
+.ubermenu-item > a {
+  font-weight: 700;
+}
+
+.ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target {
+  padding: 2px 10px 0 0;
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.ubermenu-item-5600 > .ubermenu-submenu > .ubermenu-column {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 35px 0 50px;
+  padding: 0 15px;
+}
