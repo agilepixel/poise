@@ -1,12 +1,11 @@
-/*------------------------------------*\
-    #HORIZONTAL RULE
-\*------------------------------------*/
-hr{
+/**
+  * #HORIZONTAL RULE
+  */
+
+hr {
   border: none;
-  width: 80%;
+  width: 100%;
   display: block;
-  margin: space(site, double) auto;
-  border: 0;
+  margin: space(site) auto;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(palette(site, content), 0), rgba(palette(site, content), 0.75), rgba(palette(site, content), 0));
 }

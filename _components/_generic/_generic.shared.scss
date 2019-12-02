@@ -1,20 +1,17 @@
+/* stylelint-disable */
+
 /* ==========================================================================
    #SHARED
    ========================================================================== */
-
 
 /**
  * Shared declarations for certain elements.
  */
 
-
 /**
  * Always declare margins in the same direction:
  * csswizardry.com/2012/06/single-direction-margin-declarations
  */
-
-
-/* stylelint-disable selector-list-comma-newline-after */
 
 address,
 h1,
@@ -33,8 +30,9 @@ figure,
 hr,
 table,
 fieldset {
-    margin-bottom: space(site, onehalf);
+  margin-bottom: space(site);
 }
+
 
 
 /**
@@ -44,8 +42,5 @@ fieldset {
 dd,
 ol,
 ul {
-    margin-left: space(site);
+  margin-left: space(site);
 }
-
-
-/* stylelint-enable selector-list-comma-newline-after */

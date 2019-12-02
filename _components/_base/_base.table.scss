@@ -1,65 +1,25 @@
-/*------------------------------------*\
+/*
     #TABLE
-\*------------------------------------*/
-
-$tableBorder: 1px solid palette(site, content);
+*/
+$tableBorder: 0 !default;
 
 table {
   border-collapse: separate;
   border-spacing: 0;
-  max-width: 100%;
   width: 100%;
   border: $tableBorder;
-  border-bottom: none;
-  margin: space(site) 0;
+  border-bottom: 0;
+  margin: 0;
 }
 
-th {
-  text-align: left;
-}
-tr{
-  border:none;
-  &:nth-child(even){
-    background: rgba(palette(site,  grey-dark), 0.05);
-  }
+tr {
+  border: 0;
 }
 
 th,
-td {
-  border:none;
-  line-height: inherit;
-  border-right: $tableBorder;
-  border-bottom: $tableBorder;
-  &:last-child{
-    border-right: none;
-  }
-}
-
-th {
-  vertical-align: bottom ;
-  padding: space(site, half);
-}
-td {
-  vertical-align: middle;
-  padding: space(site, half);
-}
-
-thead{
-  border:none;
-  th, td{
-    background: palette(site, brand);
-    color: palette(site, content-inverse);
-    border-right: $tableBorder;
-    &:last-child{
-      border-right: none;
-    }
-  }
-}
-
-tbody{
-  border:none;
-}
-
-tfoot{
-  border:none;
+td,
+thead,
+tbody,
+tfoot {
+  border: 0;
 }

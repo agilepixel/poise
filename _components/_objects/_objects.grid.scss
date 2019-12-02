@@ -1,58 +1,70 @@
-/*-------------------------*/
+/**
+  *   #GRID
+  */
 
+.col {
+  padding-left: space(site, grid);
+  flex-grow: 1;
+}
 
-/* +GRID                   */
-
-
-/*-------------------------*/
-
-// Container for each row
-.grid,
-.jeet--grid .top_label {
+.grid {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  height: 100%;
-  margin: 0 0 0 space(negative);
-  clear: both;
+  margin: 0 0 0 space(negative, grid);
+
+  + .grid {
+    margin-top: 0;
+  }
+
   &--nomargin {
     margin: 0;
-    &>[class*="col-"] {
+
+    & > .col {
       padding-left: 0;
     }
   }
-  &--center {
-    text-align: center;
+  &__spacing,
+  &__limited {
+    padding-top: 1.5em;
+
+    @include mq($from: tablet) {
+      padding-top: space(site, desktopSpacing);
+    }
+
+    .col {
+      margin-bottom: space(site, grid);
+    }
   }
-}
-
-// Global settings for columns
-[class*="col-"],
-.jeet--one-half--loop,
-.jeet--one-whole--noloop {
-  display: inline-block;
-  list-style: none;
-  padding-left: space(site);
-  vertical-align: top;
-}
-
-.nogutter {
-  padding-left: 0;
+  &--doubleMargin {
+    margin: 0 0 0 -1.5em;
+    .col {
+      padding-left: 1.5em;
+    }
+  }
 }
 
 // Alignement of items. Use with .grid
-@each $position,
-$value in $grid-position {
+@each $position, $value in $grid-position {
   .grid-#{$position} {
-    text-align: $value;
+    justify-content: $value;
   }
 }
 
-@each $breakpoint,
-$value in $grid-breakpoints {
-  @include mq($until: $value) {
+@each $breakpoint, $value in $grid-breakpoints {
+  @include mq($until: #{$value}) {
     @each $position, $value in $grid-position {
       .grid-#{$position}-#{$breakpoint} {
-        text-align: $value;
+        justify-content: $value;
       }
+    }
+  }
+}
+
+@each $breakpoint, $value in $grid-breakpoints {
+  @include mq($until: #{$value}) {
+    .grid-reverse-#{$breakpoint} {
+      flex-direction: row-reverse;
     }
   }
 }
@@ -60,58 +72,39 @@ $value in $grid-breakpoints {
 // Different column sizes
 @each $size in $column-sizes {
   $roundsize: floor($size);
+
   .col-#{$roundsize} {
-    $val: $size * 1%;
-    width: $val;
+    flex-basis: $size * 1%;
+    max-width: $size * 1%;
   }
 }
 
-@each $breakpoint,
-$value in $grid-breakpoints {
-  @include mq($until: $value) {
+@each $breakpoint, $value in $grid-breakpoints {
+  @include mq($until: #{$value}) {
     @each $size in $column-sizes {
       $roundsize: floor($size);
+
       .col-#{$roundsize}-#{$breakpoint} {
-        $val: $size * 1%;
-        width: $val;
+        flex-basis: $size * 1%;
+        max-width: $size * 1%;
       }
     }
   }
 }
 
 // Align item to the top, center, or bottom
-@each $position,
-$value in $grid-position {
+@each $position, $value in $grid-position {
   .col-#{$position} {
     align-self: $value;
   }
 }
 
-@each $breakpoint,
-$value in $grid-breakpoints {
-  @include mq($until: $value) {
+@each $breakpoint, $value in $grid-breakpoints {
+  @include mq($until: #{$value}) {
     @each $position, $value in $grid-position {
       .col-#{$position}-#{$breakpoint} {
         align-self: $value;
       }
     }
   }
-}
-
-.flex-grid {
-  display: flex;
-}
-
-.col__pull-right {
-  float: right;
-}
-
-.jeet--one-half--loop {
-  width: 100%;
-  padding: 0 0 space(site) space(site);
-}
-
-.jeet--one-whole--noloop {
-  width: 100%;
-  padding: 0 0 space(site) space(site);
 }

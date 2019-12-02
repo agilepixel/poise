@@ -1,6 +1,7 @@
-/*------------------------------------*\
-    #MODAL
-\*------------------------------------*/
+/**
+  *   #MODAL
+  */
+
 .modal {
   position: fixed;
   top: 50%;
@@ -14,57 +15,37 @@
   backface-visibility: hidden;
   transform: translate(-50%, -50%);
   margin: 0;
-}
 
-.modal--active {
-  visibility: visible;
-}
+  &.active {
+    visibility: visible;
 
-.modal__overlay {
-  @include colorOpacity(background, palette(site, content-inverse), 0.2);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  opacity: 0;
-  transition: all 0.3s;
-}
+    .modal__content {
+      opacity: 1;
+    }
 
-.modal--active ~ .modal__overlay {
-  opacity: 1;
-  visibility: visible;
-}
-.no-scroll{
-  overflow: hidden;
-}
-/* Content styles */
-.modal{
-  perspective: 1300px;
+    & ~ .modal__overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__overlay {
+    background-color: rgba(palette(site, light), .2);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: depth(site, above);
+    opacity: 0;
+  }
+
   &__content {
-    @include colorOpacity(background, palette(site, content-inverse), 0.6);
+    background-color: palette(site, light);
     position: relative;
     margin: 0 auto;
     padding: space(site);
-    transform-style: preserve-3d;
-    transform: rotateX(-70deg);
-    transition: all 0.3s;
     opacity: 0;
-    text-align: center;
   }
-  &__close--js{
-    @include link-colors(palette(site, content-inverse));
-    padding: space(site);
-    display: block;
-    position: absolute;
-    top:space(site);
-    right:space(site);
-  }
-}
-
-.modal.modal--active .modal__content {
-  transform: rotateX(0deg);
-  opacity: 1;
 }

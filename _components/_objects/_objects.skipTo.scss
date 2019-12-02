@@ -1,0 +1,31 @@
+/**
+  *   #SKIP TO
+  */
+
+.skipto {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+  display: block;
+
+  &:focus,
+  &:active {
+    position: static;
+    clip: unset;
+    -webkit-clip-path: none;
+    clip-path: none;
+    background: palette(site, light);
+    padding: .625rem 1.25rem;
+    display: block;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: palette(site, dark);
+  }
+}

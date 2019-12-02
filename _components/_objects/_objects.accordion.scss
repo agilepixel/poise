@@ -1,63 +1,11 @@
-/*------------------------------------*\
-    #ACCORDION
-\*------------------------------------*/
-.accordion {
-  &__container{
-    margin-bottom: space(site);
-  }
-  &__title {
-    @include font-size(size(headings, heading-size-9), 1.2);
-    background: rgba(palette(site, grey-dark), 0.05);
-    padding: space(site) space(site) space(site) space(site, double);
-    color: palette(site, content);
-    margin: 0;
-    margin-bottom: 2px;
-    display: block;
-    cursor: pointer;
-    position: relative;
-    &:hover{
-      cursor: pointer;
-    }
-    &:before{
-      @include font-size(size(site, medium));
-      content: "+";
-      background:rgba(palette(site, grey-dark), 0.4);
-      color:rgba(palette(site, content-inverse), 0.8);
-      border-radius: 50%;
-      text-align: center;
-      line-height: 13px;
-      width: 14px;
-      height: 14px;
-      position: absolute;
-      left: 6px;
-      top: 10px;
-      margin: 3px;
-      transition: all 0.5s ease-in-out 0s;
-      animation: spinBack 0.3s normal forwards ease-in-out;
-    }
-    &.active{
-      &:before{
-        animation: spin 0.3s normal forwards ease-in-out;
-      }
-    }
-  }
-  &__content{
-    opacity: 0;
-    max-height: 0;
-    transition: all ease-in-out .3s;
-    overflow: hidden;
-    padding: 0 space(site, double);
-    &.active{
-      background: rgba(palette(site, grey-dark), 0.01);
-      display: block;
-      opacity: 1;
-      max-height: 9000px;
-      padding: space(site, double) space(site, double) space(site);
-    }
+/**
+  *   #ACCORDION
+  */
 
-  }
-  &__inner{
-    padding: space(site);
-    background: palette(site, content);
-  }
+.accordion {
+  //Needs Content
+}
+
+.accordion__item {
+  //Needs Content
 }

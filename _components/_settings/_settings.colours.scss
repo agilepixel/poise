@@ -1,49 +1,54 @@
-///*------------------------------------*\
-//    #COLOURS
-//\*------------------------------------*/
+/**
+  *   #COLOURS
+  */
+
 @function palette($palette, $tone: 'base') {
-    @return map-get(map-get($palettes, $palette), $tone);
+  @return map-get(map-get($palettes, $palette), $tone);
 }
 
-$palettes: ( site: ( //newline
-base: #101820, //newline
-black: #000000, //newline
-white: #ffffff, //newline
-background: #ffffff, //newline
-footer-bg: #101820, //newline
-content: #101820, //newline
-content-inverse: #ffffff, //newline
-brand: #e60000, //newline
-brand-light: rgba(#e60000, 0.5), //newline
-grey: #6D6E71, //newline
-grey-dark: #101820, //newline
-accent: #4E9CC9, //newline
-checkbox-border: #808285, //newline
-checkbox-inner: #6ABD45, //newline
-inputBorder: #58595B, //newline
-selectBackground: rgba(#58595B, 0.1), //newline
-paynes-grey: #58585b, //newline
-golden-rod: #E1C241, //newline
-grain: #C1B49A, //newline
-steel: #6D6E70, //newline
-con-grey: #58595B), //newline
-links: ( base: #e60000, //newline
-link: #A7A9AB, //newline
-hover: #000000, //newline
-active: #000000, //newline
-visited: #e60000), //newline
-nav: ( base: #fff, //newline
-hover: #e60000, //newline
-active: #e60000), //newline
-debug: ( base: #333F4D, //newline
-hateching: #FFCC00, //newline
-text: #fff), //newline
-alert: ( base: #0092D1, //newline
-warning: #ED9F2D, //newline
-error: #e60000, //newline
-success: #84BF41), //newline
-symbol: ( base: #0092D1, //newline
-warning: #D7DF23, //newline
-error: #e60000, //newline
-success: #84BF41), //newline
+$palettes: (
+  site: (
+    base: #2d3034,
+    dark: #000000,
+    light: #ffffff,
+    background: #ffffff,
+    content: #2d3034,
+    brand: #2d3034
+  ),
+  links: (
+    base: #2d3034,
+    link: #2d3034,
+    hover: darken(#2d3034, 20%),
+    active: #2d3034,
+    visited: #2d3034
+  ),
+  nav: (
+    base: #ffffff,
+    hover: #ffffff,
+    active: #ffffff
+  ),
+  debug: (
+    base: #333f4d,
+    hatching: #ffcc00,
+    text: #ffffff
+  ),
+  alert: (
+    base: #0092d1,
+    warning: #ed9f2d,
+    error: #e73743,
+    success: #84bf41
+  ),
+  design: (
+    headerBackground: #101010,
+    searchBackground: #040404,
+    brand: #b60008,
+    brandLight: #e30a13,
+    nav: #c7c6c6,
+    navHover: #ffffff,
+    border: #313131,
+    footerBackground: #f9f9f9,
+    grey: #555555,
+    siteDark: #444444,
+    sectionBg: #f7f7f7
+  )
 ) !default;

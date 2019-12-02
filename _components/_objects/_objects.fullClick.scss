@@ -1,20 +1,19 @@
-/*------------------------------------*\
-    #wrapper
-\*------------------------------------*/
+/**
+  *   #FULL CLICK
+  */
 
 .full-click {
+  @include hideText;
   position: absolute;
-  overflow: hidden;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: depth(site, above);
-  text-indent: 200%;
-  white-space: nowrap;
   cursor: pointer;
   display: block;
-  br{
+
+  br {
     display: none;
   }
 }

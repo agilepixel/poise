@@ -1,0 +1,7 @@
+/**
+  *   #Get EM value from PX
+  */
+
+@function em($pixels, $context: 16, $type: em) {
+  @return #{$pixels/$context}em;
+}

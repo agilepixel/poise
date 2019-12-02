@@ -1,7 +1,7 @@
 var path = require('path');
 var directory = path.resolve(__dirname);
 module.exports = {
-  entry: directory + '/style.scss',
+  entry: directory + '/test.scss',
   output: {
     filename: 'bundle.js',
     path: directory + '/dist/'

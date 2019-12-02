@@ -1,15 +1,16 @@
-/*------------------------------------*\
-    #LISTS
-\*------------------------------------*/
-
 /**
- * Remove extra vertical spacing when nesting lists.
- */
-li {
-  line-height: 1.4;
-    > ul,
-    > ol {
-        margin-bottom: 0;
-    }
+  *   #LISTS
+  */
 
+ol,
+ul {
+  margin: 0 0 space(site);
+}
+
+li {
+
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }

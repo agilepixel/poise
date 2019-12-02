@@ -1,0 +1,9 @@
+/**
+  *   #PSEUDO ELEMENT
+  */
+
+@mixin pseudoElement($content: '') {
+  content: $content;
+  display: block;
+  position: absolute;
+}

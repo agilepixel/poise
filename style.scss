@@ -1,17 +1,32 @@
 /* Import All External Dependancies */
 @import "~sass-mq";
 /* Settings */
-@import "_components/_settings/_settings.defaults";
-@import "_components/_settings/_settings.responsive";
-@import "_components/_settings/_settings.colours";
-@import "_components/_settings/_settings.fonts";
+
+@import '_components/_settings/_settings.colours';
+@import '_components/_settings/_settings.core';
+@import '_components/_settings/_settings.fonts';
+
 /* Generic */
 @import "~normalize.css";
 @import "_components/_generic/_generic.reset";
 @import "_components/_generic/_generic.box-sizing";
 @import "_components/_generic/_generic.shared";
 /* Tools */
-@import "_components/_tools/_tools.mixins";
+
+@import '_components/_tools/_tools.appearance';
+@import '_components/_tools/_tools.button';
+@import '_components/_tools/_tools.clickInputs';
+@import '_components/_tools/_tools.getVW';
+@import '_components/_tools/_tools.getEM';
+@import '_components/_tools/_tools.fonts';
+@import '_components/_tools/_tools.headings';
+@import '_components/_tools/_tools.hideText';
+@import '_components/_tools/_tools.linkColours';
+@import '_components/_tools/_tools.placeholders';
+@import '_components/_tools/_tools.pseudoElement';
+@import '_components/_tools/_tools.responsiveFont';
+@import '_components/_tools/_tools.transition';
+
 /* Base */
 @import "_components/_base/_base.page";
 @import "_components/_base/_base.headings";
@@ -28,23 +43,22 @@
 @import "_components/_plugins/_plugins.gravityForms";
 @import "_components/_plugins/_plugins.responsiveVideo";
 /* Objects */
-@import "_components/_objects/_objects.accordion";
-@import "_components/_objects/_objects.buttons";
-@import "_components/_objects/_objects.ajaxLoader";
-@import "_components/_objects/_objects.alert";
-@import "_components/_objects/_objects.animation";
-@import "_components/_objects/_objects.burger";
-@import "_components/_objects/_objects.carousel";
-@import "_components/_objects/_objects.display";
-@import "_components/_objects/_objects.fullClick";
-@import "_components/_objects/_objects.grid";
-@import "_components/_objects/_objects.forms";
-@import "_components/_objects/_objects.hide";
-@import "_components/_objects/_objects.modal";
-@import "_components/_objects/_objects.nav";
-@import "_components/_objects/_objects.wrapper";
-@import "_components/_objects/_objects.clearfix";
-@import "_components/_objects/_objects.loading";
+
+@import '_components/_objects/_objects.accordion';
+@import '_components/_objects/_objects.alert';
+@import '_components/_objects/_objects.animation';
+@import '_components/_objects/_objects.burger';
+@import '_components/_objects/_objects.buttons';
+@import '_components/_objects/_objects.forms';
+@import '_components/_objects/_objects.fullClick';
+@import '_components/_objects/_objects.grid';
+@import '_components/_objects/_objects.hide';
+@import '_components/_objects/_objects.hiddenText';
+@import '_components/_objects/_objects.modal';
+@import '_components/_objects/_objects.show';
+@import '_components/_objects/_objects.skipTo';
+@import '_components/_objects/_objects.wrapper';
+@import '_components/_objects/_objects.responsiveVideo';
 @media print {
    @import"_components/_objects/_objects.print";
 }

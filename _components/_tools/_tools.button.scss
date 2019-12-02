@@ -1,0 +1,39 @@
+/**
+  *   #BUTTON
+  */
+
+@mixin button(
+  $defaultBackground: #000,
+  $defaultColour: #fff,
+  $hoverBackground: #fff,
+  $hoverColour: #000,
+  $padding: 1em,
+  $paddingHover: 1em,
+  $margin: 0
+) {
+  @include responsiveFont(button, 1);
+  @include link-colors($defaultColour, $hoverColour);
+  @include transition(background .4s ease, color .3s ease);
+
+  appearance: none;
+  padding: $padding;
+  background-color: $defaultBackground;
+  margin: $margin;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  border: 0;
+  position: relative;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 0;
+  width: 100%;
+
+  &:hover {
+    background: $hoverBackground;
+  }
+}
