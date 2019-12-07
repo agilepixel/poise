@@ -3,14 +3,14 @@
   */
 
 .wrapper {
-  max-width: 1600px;
+  max-width: $wrapper-max-width;
   margin: 0 auto;
-  width: 100%;
+  width: $wrapper-width;
   position: relative;
 }
 
 .wrapper--short {
-  max-width: 1524px;
+  max-width: $wrapper-short-max-width;
   position: relative;
   margin: 0 space(site, mobileSpacing);
   width: auto;

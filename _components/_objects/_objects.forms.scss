@@ -2,41 +2,39 @@
   *   #FORMS
   */
 
-input {
-  &[type='text'],
-  &[type='url'],
-  &[type='tel'],
-  &[type='number'],
-  &[type='color'],
-  &[type='email'],
-  &[type='password'],
-  &[type='search'],
-  &[type='text'],
-  &[type='radio'],
-  &[type='checkbox'],
-  select,
-  textarea {
-    background: palette(site, light);
-    width: 100%;
-    padding: space(site);
-    border-radius: 0;
-    border: solid palette(site) 1px;
-    margin-bottom: space(site);
-    display: block;
-    font-weight: normal;
-    position: relative;
+input[type='text'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='color'],
+input[type='email'],
+input[type='password'],
+input[type='search'],
+input[type='text'],
+input[type='radio'],
+input[type='checkbox'],
+select,
+textarea {
+  background: palette(site, light);
+  width: 100%;
+  padding: space(site);
+  border-radius: 0;
+  border: solid palette(site) 1px;
+  margin-bottom: space(site);
+  display: block;
+  font-weight: normal;
+  position: relative;
 
-    @include placeholder() {
-      color: palette(site, dark);
-    }
+  &:placeholder {
+    color: palette(site, dark);
+  }
 
-    &:focus {
-      color: palette(site, dark);
-    }
+  &:focus {
+    color: palette(site, dark);
+  }
 
-    &:disabled {
-      -webkit-text-fill-color: palette(site);
-    }
+  &:disabled {
+    -webkit-text-fill-color: palette(site);
   }
 }
 

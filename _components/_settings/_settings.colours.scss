@@ -39,16 +39,8 @@ $palettes: (
     success: #84bf41
   ),
   design: (
-    headerBackground: #101010,
-    searchBackground: #040404,
-    brand: #b60008,
-    brandLight: #e30a13,
-    nav: #c7c6c6,
-    navHover: #ffffff,
-    border: #313131,
-    footerBackground: #f9f9f9,
-    grey: #555555,
-    siteDark: #444444,
-    sectionBg: #f7f7f7
+
   )
 ) !default;
+
+$burger-icon-color: palette(site, content) !default;

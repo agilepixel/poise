@@ -1,198 +1,93 @@
 .nav__container {
-  display: flex;
   flex-grow: 1;
-  justify-content: flex-end;
-}
-
-.nav--primary {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  max-height: 100%;
-  overflow: auto;
-  background-color: palette(design, headerBackground);
-  z-index: depth(site, aboveAll);
-  transform: translateX(-100%);
 
-  @include mq($from: tabletPortrait) {
-    transform: translateX(0) translateY(0);
-    position: relative;
+  @include mq($from: tablet) {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: auto;
-    overflow: visible;
-  }
-
-  &.active {
-    transform: translateX(0) translateY(0);
-    box-shadow: 0 0 10px rgba(palette(site, dark), .8);
-  }
-  &.animate {
-    @include transition(transform .5s ease);
   }
 }
-
 .nav {
   list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  @include mq($from: tabletPortrait) {
+  @include mq($from: tablet) {
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
-    text-align: center;
-    margin: 0 space(site, grid);
+    justify-self: flex-start;
   }
-
   .menu-item {
     position: relative;
-    width: 100%;
-
-    @include mq($from: tabletPortrait) {
-      width: auto;
-    }
-
-    &:last-child {
-      a {
-        border: 0;
-      }
-    }
-
     &:hover {
       .sub-menu {
+        visibility: visible;
         opacity: 1;
-        top: 4em;
-        pointer-events: all;
+        top: 2em;
       }
     }
   }
-
   a {
     @include transition(color .3s ease);
     @include responsiveFont(nav, 1);
-    @include link-colors(palette(design, nav), palette(design, navHover));
 
     display: block;
     position: relative;
-    margin: 0;
-    padding: 1em;
-    width: 100%;
-    border-bottom: solid 1px palette(design, border);
-    background-color: palette(design, headerBackground);
-
-    @include mq($from: tabletPortrait) {
-      margin: 0 .75em;
-      padding: space(site, desktopSpacing) 0;
-      width: auto;
-      border: 0;
-    }
-
     &::after {
-      @include transition(height .3s linear);
+      @include transition(width .3s ease);
       @include pseudoElement;
 
-      top: 0;
+      bottom: 0;
       left: 0;
-      width: 100%;
-      height: 0;
-      background-color: palette(design, brand);
+      width: 0;
+      height: 2px;
+      background-color: palette(site, content);
     }
 
     &:hover {
       &::after {
-        height: .25em;
+        width: 100%;
       }
     }
   }
-
-  .current-menu-item,
-  .current_page_parent {
-    & > a {
-      @include link-colors(palette(design, navHover));
-
+  .current-menu-item {
+    a {
       &::after {
-        height: .25em;
+        width: 100%;
       }
-    }
-    .sub-menu .current-menu-item a {
-      @include link-colors(palette(site, dark), palette(design, brand));
     }
   }
 }
 
 .sub-menu {
+  @include transition(top ease .4s);
+
   padding: 0;
   list-style: none;
+  background-color: rgba(palette(site, dark), .8);
   z-index: depth(site, above);
-  background-color: rgba(palette(site, light), .2);
 
-  @include mq($from: tabletPortrait) {
-    background-color: palette(site, light);
+  @include mq($from: tablet) {
     text-align: left;
+    visibility: hidden;
     position: absolute;
-    top: 2em;
-    left: .8em;
+    top: 1em;
+    left: 0;
     opacity: 0;
+    min-width: 400px;
     padding: 1em 0;
-    box-shadow: 0 0 15px rgba(palette(site, dark), .4);
-    pointer-events: none;
+    box-shadow: none;
   }
-
-  .initiated & {
-    @include transition(opacity ease .4s, top ease .4s);
-  }
-
-  .menu-item {
-    &:last-child a {
-      margin: 0;
-    }
-    &.current-menu-item a::before {
-      width: 4px;
-    }
-  }
-
   a {
-    background-color: rgba(palette(site, light), .001);
-    padding: 1em 1.5em;
-    @include mq($from: tabletPortrait) {
-      @include link-colors(palette(site, dark), palette(design, brand));
-      @include responsiveFont(nav, 1.4);
-
-      white-space: nowrap;
-      background-color: palette(site, light);
-      padding: 0 1.375em;
-      position: relative;
-      margin: 0 0 1em;
-
-      &::before {
-        @include transition(width .2s linear);
-        @include pseudoElement;
-
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: palette(design, brand);
-      }
-
-      &::after {
-        display: none;
-      }
-    }
-    &:hover {
-      &::before {
-        width: 4px;
-      }
+    @include responsiveFont(subNav, 1.4);
+    &::after {
+      display: none;
     }
   }
 }

@@ -17,15 +17,7 @@ $spacing: (
     double: 2em,
     triple: 3em,
     quad: 4em,
-    grid: 1.5em,
-    desktopSpacing: 2.375rem,
-    tabletSpacing: 2rem,
-    tabletPortraitSpacing: 1.5rem,
-    mobileSpacing: 1rem,
-    desktopBottom: 6rem,
-    tabletBottom: 3rem,
-    tabletPortraitBottom: 2.5rem,
-    mobileBottom: 1.5rem
+    grid: .75em
   ),
   negative: (
     base: -1em,
@@ -33,11 +25,7 @@ $spacing: (
     double: -2em,
     triple: -3em,
     quad: -4em,
-    grid: -1.5em,
-    desktopSpacing: -2.375rem,
-    tabletSpacing: -2rem,
-    tabletPortraitSpacing: -1.5rem,
-    mobileSpacing: -1rem
+    grid: -.75em
   )
 ) !default;
 
@@ -75,8 +63,7 @@ $grid-breakpoints: (
   *   #COLUMN SIZES
   */
 
-$column-sizes: 20, 25, 30, 33.33334, 40, 45, 50, 55, 60, 66.66667, 70, 75, 80,
-  100 !default;
+$column-sizes: 20, 25, 30, 33.33334, 40, 50, 60, 66.66667, 70, 75, 80, 100 !default;
 
 /**
   *   #GRID POSITION OPTIONS
@@ -89,3 +76,15 @@ $grid-position: (
   between: space-between,
   around: space-around
 ) !default;
+
+$wrapper-max-width: 1280px !default;
+
+$wrapper-width: 90% !default;
+
+$wrapper-short-max-width: 1204px !default;
+
+$burger-icon-width: 38px !default;
+
+$burger-icon-height: 6px !default;
+
+$burger-icon-gutter: 4px !default;

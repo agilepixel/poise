@@ -2,7 +2,7 @@
   *   #ALERTS
   */
 
-$alertTypes: warning, error, success, info !default;
+$alertTypes: warning, error, success, info;
 
 .alert {
   display: block;

@@ -10,8 +10,8 @@
   *   #SIZES
   */
 
-$base-font-size: 16px;
-$base-line-height: $base-font-size;
+$base-font-size: 16px !default;
+$base-line-height: $base-font-size !default;
 $sizes: (
   site: (
     base: 16px,
@@ -20,67 +20,35 @@ $sizes: (
     triple: 48px
   ),
   mobile: (
-    largeTitle: 24px,
-    secondaryTitle: 17px,
-    tertiaryTitle: 16px,
-    default: 14px,
-    accent: 15px,
-    small: 13px,
-    smallest: 12px,
-    icon: 14px,
-    button: 20px,
-    h1: 18px,
-    h2: 20px,
-    h3: 18px,
-    h4: 16px,
-    h5: 16px,
-    h6: 16px,
-    nav: 16px
-  ),
-  tabletPortrait: (
-    largeTitle: 24px,
-    secondaryTitle: 17px,
-    tertiaryTitle: 16px,
-    default: 14px,
-    accent: 15px,
-    small: 13px,
-    smallest: 12px,
-    icon: 14px,
-    h1: 18px,
-    h2: 20px,
-    h3: 18px,
-    h4: 16px,
-    h5: 16px,
-    h6: 16px,
-    nav: 14px
-  ),
-  tablet: (
-    button: 16px,
-    h1: 18px
-  ),
-  desktop: (
-    nav: 16px
-  ),
-  wide: (
-    largeTitle: 40px,
-    secondaryTitle: 30px,
-    tertiaryTitle: 20px,
     default: 16px,
-    accent: 17px,
-    small: 13px,
-    smallest: 12px,
-    icon: 22px,
-    button: 16px,
+    button: 20px,
     h1: 24px,
     h2: 20px,
     h3: 18px,
     h4: 16px,
     h5: 16px,
     h6: 16px,
-    nav: 16px
+    nav: 24px,
+    subNav: 12px
+  ),
+  tabletPortrait: (),
+  tablet: (),
+  desktop: (),
+  wide: (
+    default: 16px,
+    button: 20px,
+    h1: 24px,
+    h2: 20px,
+    h3: 18px,
+    h4: 16px,
+    h5: 16px,
+    h6: 16px,
+    nav: 24px,
+    subNav: 12px
   )
 ) !default;
-$sanSerif: 'Open Sans', sans-serif !default;
+
+$sanSerif: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
 $serif: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif !default;
 
 /**
