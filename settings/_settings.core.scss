@@ -30,12 +30,29 @@ $inuit-global-spacing-unit-small: $inuit-global-baseline * $inuit-global-spacing
 $inuit-global-spacing-unit-large: $inuit-global-baseline * $inuit-global-spacing-unit-factor-large !default;
 $inuit-global-spacing-unit-huge: $inuit-global-baseline * $inuit-global-spacing-unit-factor-huge !default;
 
-$inuitSizes: (
-  tiny: $inuit-global-spacing-unit-tiny,
-  small: $inuit-global-spacing-unit-small,
-  large: $inuit-global-spacing-unit-large,
-  huge: $inuit-global-spacing-unit-huge,
-);
+$inuit-spacing-directions: (
+  null: null,
+  '-top': '-top',
+  '-right': '-right',
+  '-bottom': '-bottom',
+  '-left': '-left',
+  '-horizontal': '-left' '-right',
+  '-vertical': '-top' '-bottom',
+) !default;
+
+$inuit-spacing-properties: (
+  'padding': 'padding',
+  'margin': 'margin',
+) !default;
+
+$inuit-spacing-sizes: (
+  null: $inuit-global-spacing-unit,
+  '-tiny': $inuit-global-spacing-unit-tiny,
+  '-small': $inuit-global-spacing-unit-small,
+  '-large': $inuit-global-spacing-unit-large,
+  '-huge': $inuit-global-spacing-unit-huge,
+  '-none': 0,
+) !default;
 
 // Base typographical styles.
 

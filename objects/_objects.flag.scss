@@ -80,7 +80,7 @@
     }
   }
 
-  @each $name, $variable in $inuitSizes {
+  @each $name, $variable in $inuit-spacing-sizes {
     .o-flag--#{$name} {
       > .o-flag__img {
         padding-right: $variable;
