@@ -6,10 +6,20 @@
   *   #DEFAULT VARIABLES
   */
 
-$headingWeight: 400 !default;
-$paragraphLineHeight: 1.2 !default;
-$sansSerif: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
-$serif: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif !default;
+$sansSerif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$serif: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+
+$fontDefaults: (
+  weight: 400,
+  line-height: 1,
+  sansSerif: $sansSerif,
+  serif: $serif,
+) !default;
+
+// Base typographical styles.
+
+$inuit-global-font-size: 16px !default;
+$inuit-global-line-height: $inuit-global-spacing-unit !default;
 
 /**
   *   #SIZES
@@ -60,11 +70,11 @@ $sizes: (
   */
 
 %sanSerif {
-  font-family: $sansSerif;
+  font-family: map-get($fontDefaults, sansSerif);
   font-weight: normal;
 }
 
 %serif {
-  font-family: $serif;
+  font-family: map-get($fontDefaults, serif);
   font-weight: normal;
 }

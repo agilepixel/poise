@@ -9,7 +9,6 @@
   } @else {
     @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
       line-height: $line-height;
-    } @else if($line-height != none and $line-height != false) {
     }
   }
 }

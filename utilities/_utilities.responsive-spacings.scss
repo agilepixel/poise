@@ -66,7 +66,6 @@ $inuit-spacing-directions: null !default;
   // Be aware that since the `@` symbol is a reserved symbol in CSS, it has to be
   // escaped with a `\`. In the markup though, you write your classes without the
   // backslash (e.g. `u-margin-bottom@mobile`).
-  $inuit-widths-breakpoint-separator: \@ !default;
 
   $inuit-spacing-directions: null !default;
 
@@ -83,7 +82,7 @@ $inuit-spacing-directions: null !default;
         @each $size-namespace, $size in $inuit-spacing-sizes {
           @each $gridBreakpoint, $inuit-bp-value in $gridBreakpoints {
             @include mq($until: $gridBreakpoint) {
-              .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$inuit-widths-breakpoint-separator}#{$gridBreakpoint} {
+              .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$breakpoint-separator}#{$gridBreakpoint} {
                 @each $direction in $direction-rules {
                   #{$property}#{$direction}: $size !important;
                 }

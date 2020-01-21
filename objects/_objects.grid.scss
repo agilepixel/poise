@@ -22,8 +22,6 @@
   }
 }
 
-$inuit-widths-breakpoint-separator: \@ !default;
-
 // Alignement of items. Use with .o-grid
 @each $position, $value in $gridPosition {
   .o-grid-#{$position} {
@@ -34,7 +32,7 @@ $inuit-widths-breakpoint-separator: \@ !default;
 @each $breakpoint, $value in $gridBreakpoints {
   @include mq($until: #{$value}) {
     @each $position, $value in $gridPosition {
-      .o-grid-#{$position}#{$inuit-widths-breakpoint-separator}#{$breakpoint} {
+      .o-grid-#{$position}#{$breakpoint-separator}#{$breakpoint} {
         justify-content: $value;
       }
     }
@@ -56,7 +54,7 @@ $inuit-widths-breakpoint-separator: \@ !default;
     @each $size in $columnSizes {
       $roundsize: floor($size);
 
-      .o-layout__item-#{$roundsize}#{$inuit-widths-breakpoint-separator}#{$breakpoint} {
+      .o-layout__item-#{$roundsize}#{$breakpoint-separator}#{$breakpoint} {
         flex-basis: $size * 1%;
         max-width: $size * 1%;
       }
@@ -74,7 +72,7 @@ $inuit-widths-breakpoint-separator: \@ !default;
 @each $breakpoint, $value in $gridBreakpoints {
   @include mq($until: #{$value}) {
     @each $position, $value in $gridPosition {
-      .o-layout__item-#{$position}#{$inuit-widths-breakpoint-separator}#{$breakpoint} {
+      .o-layout__item-#{$position}#{$breakpoint-separator}#{$breakpoint} {
         align-self: $value;
       }
     }

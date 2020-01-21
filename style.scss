@@ -4,7 +4,6 @@
 
 // SETTINGS
 @import 'settings/settings.colours';
-@import 'settings/settings.config';
 @import 'settings/settings.core';
 @import 'settings/settings.global';
 @import 'settings/settings.fonts';
@@ -33,7 +32,6 @@
 // ELEMENTS
 @import 'elements/elements.blockquote';
 @import 'elements/elements.code';
-@import 'elements/elements.definition';
 @import 'elements/elements.headings';
 @import 'elements/elements.horizontalRule';
 @import 'elements/elements.iframe';
@@ -41,7 +39,6 @@
 @import 'elements/elements.links';
 @import 'elements/elements.lists';
 @import 'elements/elements.page';
-@import 'elements/elements.screenReader';
 @import 'elements/elements.table';
 
 // OBJECTS

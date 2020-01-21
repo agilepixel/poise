@@ -8,6 +8,8 @@
 // Standardise some UI treatments.
 
 $global-radius: 3px !default;
+$tableBorder: 0 !default;
+$inputBorder: 1px solid pal(site, dark);
 
 /**
   *   #DEFAULT VARIABLES
@@ -17,8 +19,6 @@ $wrapper: (
   width: 90%,
 ) !default;
 
-$tableBorder: 0 !default;
-$inputBorder: 1px solid pal(site, dark);
 $burger: (
   width: 30px,
   height: 5px,
@@ -28,13 +28,11 @@ $burger: (
   transitionDuration: 0.3s,
 ) !default;
 
+/**
+  *   #RATIOS
+  */
+
 $inuit-ratios: (
-  '2\\:1': (
-    2: 1,
-  ),
-  '4\\:3': (
-    4: 3,
-  ),
   '16\\:9': (
     16: 9,
   ),

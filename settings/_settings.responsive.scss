@@ -2,7 +2,7 @@
   *   #RESPONSIVE
   */
 
-$breakpoint-separator: \@;
+$breakpoint-separator: \@ !default;
 
 /**
   *   #GRID
@@ -12,6 +12,7 @@ $gridBreakpoints: (
   tablet: tablet,
   tabletPortrait: tabletPortrait,
   desktop: desktop,
+  wide: wide,
   mobile: mobile,
 ) !default;
 

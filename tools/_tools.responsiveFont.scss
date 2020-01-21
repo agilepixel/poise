@@ -2,7 +2,7 @@
   *   #RESPONSIVE FONT
   */
 
-@mixin responsiveFont($variableName, $lineHeight: 1) {
+@mixin responsiveFont($variableName, $lineHeight: 1.2) {
   font-size: (size(mobile, $variableName) / $inuit-global-font-size) * 1rem;
   line-height: $lineHeight;
 
@@ -30,7 +30,7 @@
   }
   @if ($wideSize) {
     @include mq($from: desktop) {
-      font-size: $wideSize;
+      @include font-size(size(wide, $variableName), $lineHeight);
     }
   }
 }
