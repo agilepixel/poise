@@ -1,0 +1,20 @@
+/**
+  *   #BUTTONS
+  */
+
+.c-button {
+  display: flex;
+  border: 0;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  /**
+  * Fix a Firefox bug whereby `input type='submit'` gains 2px extra padding.
+  */
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}

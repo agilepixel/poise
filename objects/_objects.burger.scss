@@ -1,0 +1,21 @@
+.o-burger {
+  display: block;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+
+  &__icon {
+    @include burger(
+      map-get($burger, width),
+      map-get($burger, height),
+      map-get($burger, gutter),
+      map-get($burger, colour),
+      map-get($burger, borderRadius),
+      map-get($burger, transitionDuration)
+    );
+  }
+
+  &.active .o-burger__icon {
+    @include burger-to-cross;
+  }
+}

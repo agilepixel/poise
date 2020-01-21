@@ -15,10 +15,10 @@ $mq-show-breakpoints: (mobile, tabletPortrait, tablet, desktop, wide);
 
 $mq-breakpoints: (
   mobile: 480px,
-  tabletPortrait: 800px,
+  tabletPortrait: 768px,
   tablet: 1024px,
   desktop: 1366px,
-  wide: 1600px
+  wide: 1600px,
 );
 
 @import 'style.scss';

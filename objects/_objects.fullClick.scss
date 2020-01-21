@@ -1,0 +1,26 @@
+/**
+  *   #FULLCLICK
+  */
+
+.o-fullClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: depth(site, above);
+  cursor: pointer;
+  display: block;
+
+  span {
+    @include inuit-hidden-visually;
+  }
+
+  br {
+    display: none;
+  }
+
+  &__container {
+    position: relative;
+  }
+}

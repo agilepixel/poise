@@ -1,0 +1,101 @@
+/**
+  *   #FORMS
+  */
+
+form {
+  display: block;
+}
+
+@each $inputType in $inputTypes {
+  input[type='#{$inputType}'] {
+    background: pal(site, light);
+    width: 100%;
+    padding: space(site);
+    border-radius: 0;
+    border: $inputBorder;
+    color: pal(site, dark);
+    margin-bottom: space(site);
+    display: block;
+    font-weight: normal;
+    position: relative;
+
+    &::placeholder {
+      color: pal(site, dark);
+    }
+
+    &:focus {
+      color: pal(site, dark);
+    }
+
+    &:disabled {
+      -webkit-text-fill-color: pal(site, disabled);
+    }
+  }
+}
+
+select,
+textarea {
+  background: pal(site, light);
+  width: 100%;
+  padding: space(site);
+  border-radius: 0;
+  border: $inputBorder;
+  margin-bottom: space(site);
+  display: block;
+  font-weight: normal;
+  position: relative;
+
+  &::placeholder {
+    color: pal(site, dark);
+  }
+
+  &:focus {
+    color: pal(site, dark);
+  }
+
+  &:disabled {
+    -webkit-text-fill-color: pal(site);
+  }
+}
+
+.o-input {
+  &__text,
+  &__textarea {
+    position: relative;
+    background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+
+    &--fixedLabel {
+      label {
+        position: absolute;
+        z-index: depth(site);
+        pointer-events: none;
+      }
+
+      ::placeholder {
+        display: none;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+
+    input[type='checkbox'] {
+      margin-right: $inuit-global-spacing-unit-small;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+
+    input[type='radio'] {
+      margin-right: $inuit-global-spacing-unit-small;
+    }
+  }
+}

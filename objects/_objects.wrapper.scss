@@ -1,0 +1,10 @@
+/**
+  *   #WRAPPER
+  */
+
+.o-wrapper {
+  max-width: map-get($wrapper, maxWidth);
+  margin: 0 auto;
+  width: map-get($wrapper, width);
+  position: relative;
+}

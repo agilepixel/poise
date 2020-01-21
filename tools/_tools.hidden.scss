@@ -1,0 +1,15 @@
+///* ========================================================================
+//   #HIDDEN-VISUALLY
+//   ======================================================================== */
+
+// Mixin to quickly apply accessible hiding to elements.
+
+@mixin inuit-hidden-visually() {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}

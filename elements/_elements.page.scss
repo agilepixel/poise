@@ -1,0 +1,14 @@
+/**
+  *   #PAGE
+  */
+
+html {
+  font-family: $sansSerif;
+  font-size: ($inuit-global-font-size / 16px) * 1em;
+  line-height: $inuit-global-line-height / $inuit-global-font-size;
+  overflow-y: scroll;
+  min-height: 100%;
+  background-color: pal(site, background);
+  color: pal(site, content);
+  font-weight: 400;
+}

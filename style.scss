@@ -1,67 +1,76 @@
+/* ==========================================================================
+   POISE
+   ========================================================================== */
+
+// SETTINGS
+@import 'settings/settings.colours';
+@import 'settings/settings.config';
+@import 'settings/settings.core';
+@import 'settings/settings.global';
+@import 'settings/settings.fonts';
+@import 'settings/settings.responsive';
+
 /* Import All External Dependancies */
-@import "~sass-mq";
-/* Settings */
+@import '~sass-mq';
+@import '~sass-burger';
 
-@import '_components/_settings/_settings.colours';
-@import '_components/_settings/_settings.core';
-@import '_components/_settings/_settings.fonts';
+// TOOLS
+@import 'tools/tools.getEM';
+@import 'tools/tools.getVW';
+@import 'tools/tools.headings';
+@import 'tools/tools.hidden';
+@import 'tools/tools.linkColours';
+@import 'tools/tools.pseudoElement';
+@import 'tools/tools.fontSize';
+@import 'tools/tools.responsiveFont';
 
-/* Generic */
-@import "~normalize.css";
-@import "_components/_generic/_generic.reset";
-@import "_components/_generic/_generic.box-sizing";
-@import "_components/_generic/_generic.shared";
-/* Tools */
+// GENERIC
+@import '~normalize.css';
+@import 'generic/generic.reset';
+@import 'generic/generic.box-sizing';
+@import 'generic/generic.shared';
 
-@import '_components/_tools/_tools.appearance';
-@import '_components/_tools/_tools.button';
-@import '_components/_tools/_tools.clickInputs';
-@import '_components/_tools/_tools.getVW';
-@import '_components/_tools/_tools.getEM';
-@import '_components/_tools/_tools.fonts';
-@import '_components/_tools/_tools.headings';
-@import '_components/_tools/_tools.hideText';
-@import '_components/_tools/_tools.linkColours';
-@import '_components/_tools/_tools.placeholders';
-@import '_components/_tools/_tools.pseudoElement';
-@import '_components/_tools/_tools.responsiveFont';
-@import '_components/_tools/_tools.transition';
+// ELEMENTS
+@import 'elements/elements.blockquote';
+@import 'elements/elements.code';
+@import 'elements/elements.definition';
+@import 'elements/elements.headings';
+@import 'elements/elements.horizontalRule';
+@import 'elements/elements.iframe';
+@import 'elements/elements.images';
+@import 'elements/elements.links';
+@import 'elements/elements.lists';
+@import 'elements/elements.page';
+@import 'elements/elements.screenReader';
+@import 'elements/elements.table';
 
-/* Base */
-@import "_components/_base/_base.page";
-@import "_components/_base/_base.headings";
-@import "_components/_base/_base.paragraphs";
-@import "_components/_base/_base.lists";
-@import "_components/_base/_base.links";
-@import "_components/_base/_base.images";
-@import "_components/_base/_base.horizontalRule";
-@import "_components/_base/_base.iframe";
-@import "_components/_base/_base.table";
-@import "_components/_base/_base.definition";
-@import "_components/_base/_base.screenReader";
-@import "_components/_base/_base.code";
-@import "_components/_base/_base.blockquote";
-@import "_components/_print/_print.base";
-/* Plugins */
-//@import "_components/_plugins/_plugins.gravityForms";
-//@import "_components/_plugins/_plugins.responsiveVideo";
-/* Objects */
+// OBJECTS
+@import 'objects/objects.block';
+@import 'objects/objects.burger';
+@import 'objects/objects.flag';
+@import 'objects/objects.forms';
+@import 'objects/objects.fullClick';
+@import 'objects/objects.grid';
+@import 'objects/objects.list-bare';
+@import 'objects/objects.list-inline';
+@import 'objects/objects.modal';
+@import 'objects/objects.ratio';
+@import 'objects/objects.table';
+@import 'objects/objects.wrapper';
 
-@import '_components/_objects/_objects.accordion';
-@import '_components/_objects/_objects.alert';
-@import '_components/_objects/_objects.animation';
-@import '_components/_objects/_objects.burger';
-@import '_components/_objects/_objects.buttons';
-@import '_components/_objects/_objects.forms';
-@import '_components/_objects/_objects.fullClick';
-@import '_components/_objects/_objects.grid';
-@import '_components/_objects/_objects.hide';
-@import '_components/_objects/_objects.hiddenText';
-@import '_components/_objects/_objects.modal';
-@import '_components/_objects/_objects.show';
-@import '_components/_objects/_objects.skipTo';
-@import '_components/_objects/_objects.wrapper';
-@import '_components/_objects/_objects.responsiveVideo';
+// COMPONENTS
+@import 'components/components.buttons';
+@import 'components/components.skipTo';
+@import 'components/compontents.accordion';
+
+// UTILITIES
+
+@import 'utilities/utilities.headings';
+@import 'utilities/utilities.hide';
+@import 'utilities/utilities.spacings';
+@import 'utilities/utilities.responsive-spacings';
+@import 'utilities/utilities.responsiveHide';
+
 @media print {
-   @import"_components/_objects/_objects.print";
+  @import 'print/print.base';
 }

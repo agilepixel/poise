@@ -1,0 +1,33 @@
+/**
+  *   #COLOURS
+  */
+
+/**
+  *   #COLOUR FUNCTION
+  */
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+} /* Deprecated */
+
+@function pal($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+$palettes: (
+  site: (
+    base: #000000,
+    dark: #000000,
+    light: #ffffff,
+    background: #ffffff,
+    content: #000000,
+    disabled: #999999,
+  ),
+  links: (
+    base: #000000,
+    link: #000000,
+    hover: #000000,
+    active: #000000,
+    visited: #000000,
+  ),
+) !default;

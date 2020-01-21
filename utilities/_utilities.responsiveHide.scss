@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #RESPONSIVE HIDE
+   ========================================================================== */
+
+/**
+ * Example usage:
+ * <div class="u-hide-from@tablet">
+ * <div class="u-hide-until@tablet">
+ */
+
+@each $breakpointName, $breakpointValue in $gridBreakpoints {
+  .u-hide-from#{$breakpoint-separator}#{$breakpointName} {
+    @include mq($from: #{$breakpointName}) {
+      display: none;
+    }
+  }
+
+  .u-hide-until#{$breakpoint-separator}#{$breakpointName} {
+    @include mq($until: #{$breakpointName}) {
+      display: none;
+    }
+  }
+}

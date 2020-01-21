@@ -1,0 +1,10 @@
+/**
+  *   #LINKS
+  */
+
+a {
+  @include link-colors(pal(links), pal(links, hover), pal(links), pal(links, visited), pal(links, active));
+
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
