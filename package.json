@@ -3,8 +3,23 @@
   "version": "0.3.0",
   "main": "style.scss",
   "files": [
-    "_components/*",
-    "_components/**/*"
+    "settings/*",
+    "settings/**/*",
+    "tools/*",
+    "tools/**/*",
+    "generic/*",
+    "generic/**/*",
+    "elements/*",
+    "elements/**/*",
+    "objects/*",
+    "objects/**/*",
+    "components/*",
+    "components/**/*",
+    "utilities/*",
+    "utilities/**/*",
+    "print/*",
+    "print/**/*",
+    
   ],
   "description": "Standing on the shoulders of giants; bringing together the amazing work from @CSSWizard-inuitcss, sass-mq and various other scss snippets and utilities",
   "scripts": {
