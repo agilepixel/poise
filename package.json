@@ -1,10 +1,17 @@
 {
   "name": "@agilepixel/poise",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "main": "style.scss",
   "files": [
-    "_components/*",
-    "_components/**/*"
+    "components/*",
+    "elements/*",
+    "generic/*",
+    "objects/*",
+    "print/*",
+    "settings/*",
+    "test/*",
+    "tools/*",
+    "utilities/*"
   ],
   "description": "Standing on the shoulders of giants; bringing together the amazing work from @CSSWizard-inuitcss, sass-mq and various other scss snippets and utilities",
   "scripts": {
