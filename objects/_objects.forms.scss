@@ -8,54 +8,13 @@ form {
 
 @each $inputType in $inputTypes {
   input[type='#{$inputType}'] {
-    background: pal(site, light);
-    width: 100%;
-    padding: space(site);
-    border-radius: 0;
-    border: $inputBorder;
-    color: pal(site, dark);
-    margin-bottom: space(site);
-    display: block;
-    font-weight: normal;
-    position: relative;
-
-    &::placeholder {
-      color: pal(site, dark);
-    }
-
-    &:focus {
-      color: pal(site, dark);
-    }
-
-    &:disabled {
-      -webkit-text-fill-color: pal(site, disabled);
-    }
+    @include inputDefault;
   }
 }
 
 select,
 textarea {
-  background: pal(site, light);
-  width: 100%;
-  padding: space(site);
-  border-radius: 0;
-  border: $inputBorder;
-  margin-bottom: space(site);
-  display: block;
-  font-weight: normal;
-  position: relative;
-
-  &::placeholder {
-    color: pal(site, dark);
-  }
-
-  &:focus {
-    color: pal(site, dark);
-  }
-
-  &:disabled {
-    -webkit-text-fill-color: pal(site);
-  }
+  @include inputDefault;
 }
 
 .o-input {

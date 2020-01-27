@@ -22,6 +22,7 @@
 @import 'tools/tools.pseudoElement';
 @import 'tools/tools.fontSize';
 @import 'tools/tools.responsiveFont';
+@import 'tools/tools.inputDefault';
 
 // GENERIC
 @import '~normalize.css';
@@ -64,8 +65,6 @@
 
 @import 'utilities/utilities.headings';
 @import 'utilities/utilities.hide';
-@import 'utilities/utilities.spacings';
-@import 'utilities/utilities.responsive-spacings';
 @import 'utilities/utilities.responsiveHide';
 
 @media print {
