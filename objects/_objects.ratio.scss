@@ -40,7 +40,8 @@
 .o-ratio__content,
 .o-ratio > iframe,
 .o-ratio > embed,
-.o-ratio > object {
+.o-ratio > object,
+.o-ratio > video {
   position: absolute;
   top: 0;
   bottom: 0;
