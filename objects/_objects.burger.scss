@@ -16,7 +16,7 @@
     );
   }
 
-  &.active .o-burger__icon {
+  &.is-active .o-burger__icon {
     @include burger-to-cross;
   }
 }
