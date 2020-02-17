@@ -16,7 +16,7 @@
     max-height: 0;
     overflow: hidden;
 
-    &.active {
+    &.is-active {
       max-height: 9000px;
       transition: max-height 1s ease-in-out;
     }

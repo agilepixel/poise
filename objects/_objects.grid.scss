@@ -24,7 +24,7 @@
 
 // Alignement of items. Use with .o-grid
 @each $position, $value in $gridPosition {
-  .o-grid-#{$position} {
+  .o-layout-#{$position} {
     justify-content: $value;
   }
 }
@@ -32,7 +32,7 @@
 @each $breakpoint, $value in $gridBreakpoints {
   @include mq($until: #{$value}) {
     @each $position, $value in $gridPosition {
-      .o-grid-#{$position}#{$breakpoint-separator}#{$breakpoint} {
+      .o-layout-#{$position}#{$breakpoint-separator}#{$breakpoint} {
         justify-content: $value;
       }
     }
