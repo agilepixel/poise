@@ -16,7 +16,7 @@
   transform: translate(-50%, -50%);
   margin: 0;
 
-  &.active {
+  &.is-active {
     visibility: visible;
 
     .o-modal__content {
