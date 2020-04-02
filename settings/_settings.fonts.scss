@@ -71,10 +71,10 @@ $sizes: (
 
 %sanSerif {
   font-family: map-get($fontDefaults, sansSerif);
-  font-weight: normal;
+  font-weight: map-get($fontDefaults, weight);
 }
 
 %serif {
   font-family: map-get($fontDefaults, serif);
-  font-weight: normal;
+  font-weight: map-get($fontDefaults, weight);
 }
