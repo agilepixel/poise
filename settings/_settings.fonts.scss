@@ -6,8 +6,8 @@
   *   #DEFAULT VARIABLES
   */
 
-$sansSerif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$serif: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+$sansSerif: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$serif: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif !default;
 
 $fontDefaults: (
   weight: 400,
