@@ -3,25 +3,20 @@
    ========================================================================== */
 
 // SETTINGS
-@import 'settings/settings.colours';
-@import 'settings/settings.core';
 @import 'settings/settings.global';
 @import 'settings/settings.fonts';
 @import 'settings/settings.responsive';
 
-/* Import All External Dependancies */
+// EXTERNAL DEPENDANCIES
 @import '~sass-mq';
 @import '~sass-burger';
 
 // TOOLS
-@import 'tools/tools.getEM';
 @import 'tools/tools.getVW';
 @import 'tools/tools.headings';
 @import 'tools/tools.hidden';
 @import 'tools/tools.linkColours';
 @import 'tools/tools.pseudoElement';
-@import 'tools/tools.fontSize';
-@import 'tools/tools.responsiveFont';
 @import 'tools/tools.inputDefault';
 
 // GENERIC
@@ -43,9 +38,7 @@
 @import 'elements/elements.table';
 
 // OBJECTS
-@import 'objects/objects.block';
 @import 'objects/objects.burger';
-@import 'objects/objects.flag';
 @import 'objects/objects.forms';
 @import 'objects/objects.fullClick';
 @import 'objects/objects.grid';
@@ -55,11 +48,9 @@
 @import 'objects/objects.ratio';
 @import 'objects/objects.table';
 @import 'objects/objects.wrapper';
+@import 'objects/objects.skipTo';
 
 // COMPONENTS
-@import 'components/components.buttons';
-@import 'components/components.skipTo';
-@import 'components/compontents.accordion';
 
 // UTILITIES
 

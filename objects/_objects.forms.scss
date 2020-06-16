@@ -45,7 +45,7 @@ textarea {
     align-items: center;
 
     input[type='checkbox'] {
-      margin-right: $inuit-global-spacing-unit-small;
+      margin-right: var(--spacingBase);
     }
   }
 
@@ -54,7 +54,7 @@ textarea {
     align-items: center;
 
     input[type='radio'] {
-      margin-right: $inuit-global-spacing-unit-small;
+      margin-right: var(--spacingBase);
     }
   }
 }

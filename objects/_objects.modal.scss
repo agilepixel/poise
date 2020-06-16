@@ -30,7 +30,7 @@
   }
 
   &__overlay {
-    background-color: rgba(pal(site, dark), 0.2);
+    background-color: rgba(var(--colourDark), 0.2);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -44,10 +44,10 @@
 
   &__content {
     transition: opacity 0.3s ease;
-    background-color: pal(site, light);
+    background-color: var(--colourLight);
     position: relative;
     margin: 0 auto;
-    padding: space(site);
+    padding: var(--spacingBase);
     opacity: 0;
   }
 }

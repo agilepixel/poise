@@ -13,7 +13,7 @@
   display: block;
 
   span {
-    @include inuit-hidden-visually;
+    @include hidden-visually;
   }
 
   br {

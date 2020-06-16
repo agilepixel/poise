@@ -6,7 +6,7 @@ pre,
 code {
   line-height: map-get($fontDefaults, line-height);
   overflow: hidden;
-  padding: 0 space(site);
-  margin: 0 0 space(site);
+  padding: 0 var(--spacingBase);
+  margin: 0 0 var(--spacingBase);
   vertical-align: middle;
 }

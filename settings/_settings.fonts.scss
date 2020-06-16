@@ -16,55 +16,6 @@ $fontDefaults: (
   serif: $serif,
 ) !default;
 
-// Base typographical styles.
-
-$inuit-global-font-size: 16px !default;
-$inuit-global-line-height: $inuit-global-spacing-unit !default;
-
-/**
-  *   #SIZES
-  */
-
-@function size($size, $item: 'base') {
-  @return map-get(map-get($sizes, $size), $item);
-}
-
-$sizes: (
-  site: (
-    base: 16px,
-    half: 8px,
-    double: 32px,
-    triple: 48px,
-  ),
-  mobile: (
-    default: 16px,
-    button: 20px,
-    h1: 24px,
-    h2: 20px,
-    h3: 18px,
-    h4: 16px,
-    h5: 16px,
-    h6: 16px,
-    nav: 24px,
-    subNav: 12px,
-  ),
-  tabletPortrait: (),
-  tablet: (),
-  desktop: (),
-  wide: (
-    default: 16px,
-    button: 20px,
-    h1: 24px,
-    h2: 20px,
-    h3: 18px,
-    h4: 16px,
-    h5: 16px,
-    h6: 16px,
-    nav: 24px,
-    subNav: 12px,
-  ),
-) !default;
-
 /**
   *   #RE-USEABLE FONT GROUPS
   */

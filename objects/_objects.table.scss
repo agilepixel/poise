@@ -24,14 +24,3 @@
 .o-table--fixed {
   table-layout: fixed;
 }
-
-/* Size variants
-   ========================================================================== */
-@each $name, $variable in $inuit-spacing-sizes {
-  .o-table--#{$name} {
-    th,
-    td {
-      padding: $variable;
-    }
-  }
-}

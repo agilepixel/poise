@@ -4,11 +4,11 @@
 
 html {
   font-family: map-get($fontDefaults, sansSerif);
-  font-size: (size(site) / 16px) * 1em;
+  font-size: em(16);
   line-height: map-get($fontDefaults, line-height);
   overflow-y: scroll;
   min-height: 100%;
-  background-color: pal(site, background);
-  color: pal(site, content);
+  background-color: var(--colourBackground);
+  color: var(--colourContent);
   font-weight: 400;
 }

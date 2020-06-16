@@ -7,9 +7,7 @@
 
 // Standardise some UI treatments.
 
-$global-radius: 3px !default;
-$tableBorder: 0 !default;
-$inputBorder: 1px solid pal(site, dark) !default;
+$inputBorder: 1px solid var(--colourDark) !default;
 
 /**
   *   #DEFAULT VARIABLES
@@ -23,7 +21,7 @@ $burger: (
   width: 30px,
   height: 5px,
   gutter: 3px,
-  colour: pal(site, dark),
+  colour: var(--colourDark),
   borderRadius: 0,
   transitionDuration: 0.3s,
 ) !default;
@@ -35,33 +33,6 @@ $burger: (
 $inuit-ratios: (
   '16\\:9': (
     16: 9,
-  ),
-) !default;
-
-/**
-  *   #SPACING
-  */
-
-@function space($space, $default: 'base') {
-  @return map-get(map-get($spacing, $space), $default);
-}
-
-$spacing: (
-  site: (
-    base: 0.75em,
-    half: 0.375em,
-    double: 1.5em,
-    triple: 2.25em,
-    quad: 3em,
-    grid: 0.75em,
-  ),
-  negative: (
-    base: -0.75em,
-    half: -0.375em,
-    double: -1.5em,
-    triple: -2.25em,
-    quad: -3em,
-    grid: -0.75em,
   ),
 ) !default;
 

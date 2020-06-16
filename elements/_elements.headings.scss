@@ -7,25 +7,25 @@
 }
 
 h1 {
-  @include responsiveFont(h1);
+  font-size: var(--fontSizeH1);
 }
 
 h2 {
-  @include responsiveFont(h2);
+  font-size: var(--fontSizeH2);
 }
 
 h3 {
-  @include responsiveFont(h3);
+  font-size: var(--fontSizeH3);
 }
 
 h4 {
-  @include responsiveFont(h4);
+  font-size: var(--fontSizeH4);
 }
 
 h5 {
-  @include responsiveFont(h5);
+  font-size: var(--fontSizeH5);
 }
 
 h6 {
-  @include responsiveFont(h6);
+  font-size: var(--fontSizeH6);
 }

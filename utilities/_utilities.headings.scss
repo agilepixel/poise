@@ -12,25 +12,25 @@
  */
 
 .u-h1 {
-  @include responsiveFont(h1);
+  font-size: var(--fontSizeH1);
 }
 
 .u-h2 {
-  @include responsiveFont(h2);
+  font-size: var(--fontSizeH2);
 }
 
 .u-h3 {
-  @include responsiveFont(h3);
+  font-size: var(--fontSizeH3);
 }
 
 .u-h4 {
-  @include responsiveFont(h4);
+  font-size: var(--fontSizeH4);
 }
 
 .u-h5 {
-  @include responsiveFont(h5);
+  font-size: var(--fontSizeH5);
 }
 
 .u-h6 {
-  @include responsiveFont(h6);
+  font-size: var(--fontSizeH6);
 }

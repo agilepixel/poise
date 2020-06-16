@@ -19,13 +19,13 @@
     clip: unset;
     -webkit-clip-path: none;
     clip-path: none;
-    background: pal(site, light);
-    padding: 0.625rem 1.25rem;
+    background: var(--colourLight);
+    padding: var(--spacingBase);
     display: block;
   }
 
   &:hover {
     text-decoration: underline;
-    color: pal(site, dark);
+    color: var(--colourDark);
   }
 }

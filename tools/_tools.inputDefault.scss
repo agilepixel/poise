@@ -1,24 +1,24 @@
 @mixin inputDefault {
-  background: pal(site, light);
+  background: var(--colourLight);
   width: 100%;
-  padding: space(site);
+  padding: var(--spacingBase);
   border-radius: 0;
   border: $inputBorder;
-  color: pal(site, dark);
-  margin-bottom: space(site);
+  color: var(--colourDark);
+  margin-bottom: var(--spacingBase);
   display: block;
   font-weight: normal;
   position: relative;
 
   &::placeholder {
-    color: pal(site, dark);
+    color: var(--colourDark);
   }
 
   &:focus {
-    color: pal(site, dark);
+    color: var(--colourDark);
   }
 
   &:disabled {
-    -webkit-text-fill-color: pal(site, disabled);
+    -webkit-text-fill-color: var(--colourDisabled);
   }
 }

@@ -3,7 +3,7 @@
   */
 
 .o-layout__item {
-  padding-left: space(site, grid);
+  padding-left: var(--spacingGrid);
   flex-grow: 1;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 0 space(negative, grid);
+  margin: 0 0 0 var(--spacingGridNegative);
 
   &--flush {
     margin: 0;
