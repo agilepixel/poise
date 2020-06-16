@@ -33,12 +33,12 @@ $mq-breakpoints: (
 
 :root {
   --spacingBase: #{em(12, $type: rem)};
-  --spacingOne: #{em(16, $type: rem)};
+  /*   --spacingOne: #{em(16, $type: rem)};
   --spacingHalf: #{em(6, $type: rem)};
   --spacingTwo: #{em(32, $type: rem)};
   --spacingDouble: #{em(24, $type: rem)};
   --spacingTriple: #{em(36, $type: rem)};
-  --spacingQuad: #{em(48, $type: rem)};
+  --spacingQuad: #{em(48, $type: rem)}; */
   --spacingGrid: #{em(12, $type: rem)};
   --spacingGridNegative: -#{em(12, $type: rem)};
 }
@@ -47,19 +47,19 @@ $mq-breakpoints: (
   *   #SIZES
   */
 :root {
-  --fontSizeBase: #{em(16, $type: rem)};
+  /*   --fontSizeBase: #{em(16, $type: rem)};
   --fontSizeHalf: #{em(8, $type: rem)};
   --fontSizeDouble: #{em(32, $type: rem)};
   --fontSizeTriple: #{em(48, $type: rem)};
   --fontSizeDefault: #{em(16, $type: rem)};
-  --fontSizeButton: #{em(20, $type: rem)};
+  --fontSizeButton: #{em(20, $type: rem)}; */
   --fontSizeH1: #{em(24, $type: rem)};
   --fontSizeH2: #{em(20, $type: rem)};
   --fontSizeH3: #{em(18, $type: rem)};
   --fontSizeH4: #{em(16, $type: rem)};
   --fontSizeH5: #{em(16, $type: rem)};
   --fontSizeH6: #{em(16, $type: rem)};
-  --fontSizeNav: #{em(24, $type: rem)};
+  /*   --fontSizeNav: #{em(24, $type: rem)};
   --fontSizeSubNav: #{em(12, $type: rem)};
   --fontSizeSmallest: #{em(10, $type: rem)};
   --fontSizeSmall: #{em(12, $type: rem)};
@@ -68,7 +68,7 @@ $mq-breakpoints: (
   --fontSizeLarge: #{em(20, $type: rem)};
   --fontSizeXlarge: #{em(22, $type: rem)};
   --fontSizeXXlarge: #{em(24, $type: rem)};
-  --fontSizeXXXlarge: #{em(26, $type: rem)};
+  --fontSizeXXXlarge: #{em(26, $type: rem)}; */
 }
 
 /**
@@ -76,7 +76,7 @@ $mq-breakpoints: (
   */
 
 :root {
-  --colourBase: #000000;
+  /*   --colourBase: #000000; */
   --colourDark: #000000;
   --colourLight: #ffffff;
   --colourBackground: #ffffff;
