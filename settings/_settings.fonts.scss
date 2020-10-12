@@ -15,17 +15,3 @@ $fontDefaults: (
   sansSerif: $sansSerif,
   serif: $serif,
 ) !default;
-
-/**
-  *   #RE-USEABLE FONT GROUPS
-  */
-
-%sanSerif {
-  font-family: map-get($fontDefaults, sansSerif);
-  font-weight: map-get($fontDefaults, weight);
-}
-
-%serif {
-  font-family: map-get($fontDefaults, serif);
-  font-weight: map-get($fontDefaults, weight);
-}

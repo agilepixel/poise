@@ -43,41 +43,6 @@ $inuit-ratios: (
   ),
 ) !default;
 
-:root {
-  /*
-  * #DEFAULT
-  */
-
-  --vh: (1);
-
-  /**
-  *   #SPACING
-  */
-
-  --spacingBase: #{em(12)};
-  --spacingHalf: #{em(6)};
-  --spacingOne: #{em(16)};
-  --spacingTwo: #{em(32)};
-  --spacingDouble: #{em(24)};
-  --spacingTriple: #{em(36)};
-  --spacingQuad: #{em(48)};
-  --spacingGrid: #{em(12)};
-  --spacingGridNegative: -#{em(12)};
-
-  /**
-  *   #DEPTH
-  */
-
-  --depthBase: 1;
-  --depthBehind: -1;
-  --depthZero: 0;
-  --depthAbove: 10;
-  --depthHigh: 15;
-  --depthHigher: 20;
-  --depthHighest: 100;
-  --depthAboveAll: 150;
-}
-
 /**
   *   #INPUT TYPES
   */

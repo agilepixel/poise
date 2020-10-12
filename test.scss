@@ -18,3 +18,66 @@ $mq-breakpoints: (
 );
 
 @import 'style.scss';
+
+.box {
+  background: #40cee2;
+  width: 100px;
+  height: 100px;
+}
+.responsiveBox {
+  background: #f65e5d;
+  height: 100px;
+}
+
+:root {
+  // #FONTS
+
+  --fontSizeH1: #{em(24)};
+  --fontSizeH2: #{em(22)};
+  --fontSizeH3: #{em(20)};
+  --fontSizeH4: #{em(18)};
+  --fontSizeH5: #{em(16)};
+  --fontSizeH6: #{em(14)};
+
+  --fontSizeSmallest: #{em(10)};
+  --fontSizeSmall: #{em(12)};
+  --fontSizeNormal: #{em(16)};
+  --fontSizeMedium: #{em(18)};
+  --fontSizeLarge: #{em(20)};
+  --fontSizeXlarge: #{em(24)};
+  --fontSizeXXlarge: #{em(28)};
+  --fontSizeXXXlarge: #{em(32)};
+
+  /*
+  * #DEFAULT
+  */
+
+  --vh: (1);
+
+  /**
+  *   #SPACING
+  */
+
+  --spaceBase: #{em(12)};
+  --spaceHalf: #{em(6)};
+  --spaceOne: #{em(16)};
+  --spaceTwo: #{em(32)};
+  --spaceDouble: #{em(24)};
+  --spaceTriple: #{em(36)};
+  --spaceQuad: #{em(48)};
+  --spaceGrid: #{em(12)};
+  --spaceGridNegative: -#{em(12)};
+
+  /**
+  *   #DEPTH
+  */
+
+  --depthBase: 1;
+  --depthBehind: -1;
+  --depthZero: 0;
+  --depthAbove: 10;
+  --depthHigh: 15;
+  --depthHigher: 20;
+  --depthHighest: 100;
+  --depthAboveAll: 150;
+}
