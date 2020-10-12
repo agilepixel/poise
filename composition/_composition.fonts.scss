@@ -1,0 +1,121 @@
+.c-font {
+  &__size {
+    &--smallest {
+      font-size: var(--fontSizeSmallest);
+    }
+
+    &--small {
+      font-size: var(--fontSizeSmall);
+    }
+
+    &--normal {
+      font-size: var(--fontSizeNormal);
+    }
+
+    &--medium {
+      font-size: var(--fontSizeMedium);
+    }
+
+    &--large {
+      font-size: var(--fontSizeLarge);
+    }
+
+    &--xlarge {
+      font-size: var(--fontSizeXlarge);
+    }
+
+    &--xxlarge {
+      font-size: var(--fontSizeXXlarge);
+    }
+
+    &--xxxlarge {
+      font-size: var(--fontSizeXXXlarge);
+    }
+  }
+
+  &__transform {
+    &--upper {
+      text-transform: uppercase;
+    }
+    &--lower {
+      text-transform: lower;
+    }
+    &--none {
+      text-transform: none;
+    }
+  }
+
+  &__colour {
+    &--light {
+      color: var(--colourLight);
+    }
+    &--dark {
+      color: var(--colourDark);
+    }
+  }
+
+  &__weight {
+    &--thin {
+      font-weight: 100;
+    }
+
+    &--light {
+      font-weight: 300;
+    }
+
+    &--regular {
+      font-weight: 400;
+    }
+
+    &--medium {
+      font-weight: 500;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    &--black {
+      font-weight: 900;
+    }
+  }
+
+  &__align {
+    &--center {
+      text-align: center;
+    }
+    &--right {
+      text-align: right;
+    }
+    &--left {
+      text-align: left;
+    }
+  }
+
+  &__margin {
+    &--half {
+      margin-bottom: var(--spacingHalf);
+    }
+
+    &--one {
+      margin-bottom: var(--spacingHalf);
+    }
+
+    &--double {
+      margin-bottom: var(--spacingDouble);
+    }
+
+    &--zero {
+      margin-bottom: 0;
+    }
+  }
+
+  &__family {
+    &--sans {
+      font-family: $sansSerif;
+    }
+    &--serif {
+      font-family: $serif;
+    }
+  }
+}

@@ -2,9 +2,17 @@
   *   #PRINT
   */
 
+* {
+  background-image: none !important;
+}
+
 html {
   background: #ffffff;
   color: #000000;
+}
+
+@page {
+  margin: 2cm;
 }
 
 footer,
@@ -15,28 +23,14 @@ iframe {
   display: none;
 }
 
-.grid {
+.u-grid {
   flex-direction: column;
-}
-
-.col {
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-
-@page {
-  margin: 2cm;
 }
 
 table,
 img,
 svg {
   break-inside: avoid;
-}
-
-* {
-  background-image: none !important;
 }
 
 img,

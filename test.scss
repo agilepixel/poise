@@ -2,18 +2,12 @@
   *   #RESPOINSVE BREAK POINTS
   */
 
-@import 'tools/tools.getEM';
+/**
+  *   #SASS MQ SETTINGS
+  */
 
-// To enable support for browsers that do not support @media queries,
-// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
-// Create a separate stylesheet served exclusively to these browsers,
-// meaning @media queries will be rasterized, relying on the cascade itself
 $mq-responsive: true;
-
-// If you want to display the currently active breakpoint in the top
-// right corner of your site during development, add the breakpoints
-// to this list, ordered by width. For example: (mobile, tablet, desktop).
-$mq-show-breakpoints: (mobile, tabletPortrait, tablet, desktop, wide);
+/* $mq-show-breakpoints: (mobile, tabletPortrait, tablet, desktop, wide); */
 
 $mq-breakpoints: (
   mobile: 480px,
@@ -22,70 +16,5 @@ $mq-breakpoints: (
   desktop: 1366px,
   wide: 1600px,
 );
-
-/*
-  * VARIABLES
-  */
-
-/**
-  *   #SPACING
-  */
-
-:root {
-  --spacingBase: #{em(12, $type: rem)};
-  /*   --spacingOne: #{em(16, $type: rem)};
-  --spacingHalf: #{em(6, $type: rem)};
-  --spacingTwo: #{em(32, $type: rem)};
-  --spacingDouble: #{em(24, $type: rem)};
-  --spacingTriple: #{em(36, $type: rem)};
-  --spacingQuad: #{em(48, $type: rem)}; */
-  --spacingGrid: #{em(12, $type: rem)};
-  --spacingGridNegative: -#{em(12, $type: rem)};
-}
-
-/**
-  *   #SIZES
-  */
-:root {
-  /*   --fontSizeBase: #{em(16, $type: rem)};
-  --fontSizeHalf: #{em(8, $type: rem)};
-  --fontSizeDouble: #{em(32, $type: rem)};
-  --fontSizeTriple: #{em(48, $type: rem)};
-  --fontSizeDefault: #{em(16, $type: rem)};
-  --fontSizeButton: #{em(20, $type: rem)}; */
-  --fontSizeH1: #{em(24, $type: rem)};
-  --fontSizeH2: #{em(20, $type: rem)};
-  --fontSizeH3: #{em(18, $type: rem)};
-  --fontSizeH4: #{em(16, $type: rem)};
-  --fontSizeH5: #{em(16, $type: rem)};
-  --fontSizeH6: #{em(16, $type: rem)};
-  /*   --fontSizeNav: #{em(24, $type: rem)};
-  --fontSizeSubNav: #{em(12, $type: rem)};
-  --fontSizeSmallest: #{em(10, $type: rem)};
-  --fontSizeSmall: #{em(12, $type: rem)};
-  --fontSizeNormal: #{em(16, $type: rem)};
-  --fontSizeMedium: #{em(18, $type: rem)};
-  --fontSizeLarge: #{em(20, $type: rem)};
-  --fontSizeXlarge: #{em(22, $type: rem)};
-  --fontSizeXXlarge: #{em(24, $type: rem)};
-  --fontSizeXXXlarge: #{em(26, $type: rem)}; */
-}
-
-/**
-  *   #COLOURS
-  */
-
-:root {
-  /*   --colourBase: #000000; */
-  --colourDark: #000000;
-  --colourLight: #ffffff;
-  --colourBackground: #ffffff;
-  --colourContent: #000000;
-  --colourDisabled: #999999;
-  --colourLink: #000000;
-  --colourHover: #000000;
-  --colourActive: #000000;
-  --colourVisited: #000000;
-}
 
 @import 'style.scss';

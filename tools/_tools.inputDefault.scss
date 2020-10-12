@@ -1,21 +1,23 @@
 @mixin inputDefault {
-  background: var(--colourLight);
+  background: map-get($input, background);
   width: 100%;
-  padding: var(--spacingBase);
+  padding: map-get($input, padding);
   border-radius: 0;
-  border: $inputBorder;
-  color: var(--colourDark);
-  margin-bottom: var(--spacingBase);
+  border: map-get($input, border);
+  color: map-get($input, textColour);
+  margin: map-get($input, margin);
   display: block;
   font-weight: normal;
   position: relative;
 
   &::placeholder {
-    color: var(--colourDark);
+    color: map-get($input, textColour);
+    font-weight: inherit;
+    opacity: 1;
   }
 
   &:focus {
-    color: var(--colourDark);
+    color: map-get($input, textColour);
   }
 
   &:disabled {
