@@ -3,7 +3,7 @@
   */
 
 .c-layout {
-  &--grid {
+  &__grid {
     display: grid;
     gap: var(--spaceGrid) var(--spaceGrid);
 
@@ -24,7 +24,7 @@
     }
   }
 
-  &--flex {
+  &__flex {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 var(--spaceGridNegative);

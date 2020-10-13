@@ -25,7 +25,7 @@
  * 1. Default is a 1:1 ratio (i.e. a perfect square).
  */
 
-.u-ratio {
+.c-ratio {
   position: relative;
   display: block;
 
@@ -37,11 +37,11 @@
   }
 }
 
-.u-ratio__content,
-.u-ratio > iframe,
-.u-ratio > embed,
-.u-ratio > object,
-.u-ratio > video {
+.c-ratio__content,
+.c-ratio > iframe,
+.c-ratio > embed,
+.c-ratio > object,
+.c-ratio > video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -71,7 +71,7 @@
       @error "`#{$consequent}` needs to be a number.";
     }
 
-    .u-ratio--#{$ratio-name}::before {
+    .c-ratio--#{$ratio-name}::before {
       padding-bottom: ($consequent/$antecedent) * 100%;
     }
   }

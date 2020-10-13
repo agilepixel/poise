@@ -2,6 +2,11 @@
    #TABLE
    ========================================================================== */
 
+.c-table__responsive {
+  max-width: 100%;
+  overflow: auto;
+}
+
 /**
  * A simple object for manipulating the structure of HTML `table`s.
  */

@@ -11,12 +11,26 @@
     <nav class="b-skipto__nav" aria-labelledby="skip-to-content">
       <a class="b-skipto" id="skip-to-content" href="/" (click)="navigateToMainContent($event)">Skip to Content</a>
     </nav>
-    <main>
+    <main class="u-wrapper">
       <h1>Base Styles Test area</h1>
 
       <h2>Fonts Composition</h2>
 
       <h3>Font Size</h3>
+
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;p class="c-font__size--smallest"&gt;Font Size smallest&lt;/p&gt;
+          &lt;p class="c-font__size--small"&gt;Font Size Small&lt;/p&gt;
+          &lt;p class="c-font__size--normal"&gt;Font Size Normal&lt;/p&gt;
+          &lt;p class="c-font__size--medium"&gt;Font Size Medium&lt;/p&gt;
+          &lt;p class="c-font__size--large"&gt;Font Size Large&lt;/p&gt;
+          &lt;p class="c-font__size--xlarge"&gt;Font Size xLarge&lt;/p&gt;
+          &lt;p class="c-font__size--xxlarge"&gt;Font Size xxLarge&lt;/p&gt;
+          &lt;p class="c-font__size--xxxlarge"&gt;Font Size xxxLarge&lt;/p&gt;
+        </code>
+      </pre>
+
       <p class="c-font__size--smallest">Font Size smallest</p>
       <p class="c-font__size--small">Font Size Small</p>
       <p class="c-font__size--normal">Font Size Normal</p>
@@ -27,16 +41,38 @@
       <p class="c-font__size--xxxlarge">Font Size xxxLarge</p>
 
       <h3>Font Transform</h3>
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;p class="c-font__transform--upper"&gt;Font Upper&lt;/p&gt;
+          &lt;p class="c-font__transform--lower"&gt;Font Lower&lt;/p&gt;
+          &lt;p class="c-font__transform--none"&gt;Font None&lt;/p&gt;
+        </code>
+      </pre>
       <p class="c-font__transform--upper">Font Upper</p>
       <p class="c-font__transform--lower">Font Lower</p>
       <p class="c-font__transform--none">Font None</p>
 
       <h3>Font Colour</h3>
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+           &lt;p class="c-font__colour--light" style="background-color:#333333;"&gt;Font Colour Light&lt;/p&gt;
+       &lt;p class="c-font__colour--dark"&gt;Font Colour Dark&lt;/p&gt;
+        </code>
+      </pre>
       <p class="c-font__colour--light" style="background-color:#333333;">Font Colour Light</p>
       <p class="c-font__colour--dark">Font Colour Dark</p>
 
       <h3>Font Weight</h3>
-
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;p class="c-font__weight--thin"&gt;Font Weight Thin&lt;/p&gt;
+          &lt;p class="c-font__weight--light"&gt;Font Weight Light&lt;/p&gt;
+          &lt;p class="c-font__weight--regular"&gt;Font Weight Regular&lt;/p&gt;
+          &lt;p class="c-font__weight--medium"&gt;Font Weight Medium&lt;/p&gt;
+          &lt;p class="c-font__weight--bold"&gt;Font Weight Bold&lt;/p&gt;
+          &lt;p class="c-font__weight--black"&gt;Font Weight Black&lt;/p&gt;
+        </code>
+      </pre>
       <p class="c-font__weight--thin">Font Weight Thin</p>
       <p class="c-font__weight--light">Font Weight Light</p>
       <p class="c-font__weight--regular">Font Weight Regular</p>
@@ -45,27 +81,57 @@
       <p class="c-font__weight--black">Font Weight Black</p>
 
       <h3>Font Align</h3>
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;p class="c-font__align--center"&gt;Font Align Center&lt;/p&gt;
+          &lt;p class="c-font__align--right"&gt;Font Align Right&lt;/p&gt;
+          &lt;p class="c-font__align--left"&gt;Font Align Left&lt;/p&gt;
+        </code>
+      </pre>
       <p class="c-font__align--center">Font Align Center</p>
       <p class="c-font__align--right">Font Align Right</p>
       <p class="c-font__align--left">Font Align Left</p>
 
       <h3>Font Margin</h3>
-
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;p class="c-font__margin--half"&gt;Font Half&lt;/p&gt;
+          &lt;p class="c-font__margin--one"&gt;Font One&lt;/p&gt;
+          &lt;p class="c-font__margin--double"&gt;Font Double&lt;/p&gt;
+          &lt;p class="c-font__margin--zero"&gt;Font Zero&lt;/p&gt;
+        </code>
+      </pre>
       <p class="c-font__margin--half">Font Half</p>
       <p class="c-font__margin--one">Font One</p>
       <p class="c-font__margin--double">Font Double</p>
       <p class="c-font__margin--zero">Font Zero</p>
 
       <h3>Font Family</h3>
-
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;p class="c-font__family--sans"&gt;Font Family Sans Serif&lt;/p&gt;
+          &lt;p class="c-font__family--serif"&gt;Font Family Serif&lt;/p&gt;
+        </code>
+      </pre>
       <p class="c-font__family--sans">Font Family Sans Serif</p>
       <p class="c-font__family--serif">Font Family Serif</p>
-
 
       <hr />
 
       <h2>Layout & Grid</h2>
-
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;div class="box c-layout__space--center"&gt;centered&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-half"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-base"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--right-double"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-one"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-two"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-double"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-triple"&gt;&lt;/div&gt;
+          &lt;div class="box c-layout__space--left-quad"&gt;&lt;/div&gt;
+        </code>
+      </pre>
       <h3>Spacing between elements</h3>
       <div class="box c-layout__space--center">centered</div>
       <div class="box c-layout__space--left-half"></div>
@@ -76,6 +142,269 @@
       <div class="box c-layout__space--left-double"></div>
       <div class="box c-layout__space--left-triple"></div>
       <div class="box c-layout__space--left-quad"></div>
+
+      <h3>Grid</h3>
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+          &lt;div class="c-l&gt;out__grid c&gt;layout__grid--column-1">
+            &lt;div class="responsiveBox"&gt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="c-l&gt;out__grid c&gt;layout__grid--column-2">
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="c-l&gt;out__grid c&gt;layout__grid--column-4">
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="c-l&gt;out__grid c&gt;layout__grid--column-8">
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+            &lt;div class="responsiveBox"&gt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+      <div class="c-layout__grid c-layout__grid--column-1">
+        <div class="responsiveBox"></div>
+      </div>
+
+      <div class="c-layout__grid c-layout__grid--column-2">
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+      </div>
+
+      <div class="c-layout__grid c-layout__grid--column-4">
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+      </div>
+
+      <div class="c-layout__grid c-layout__grid--column-8">
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+        <div class="responsiveBox"></div>
+      </div>
+
+      <h3>Flex</h3>
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+
+          &lt;div class="c-layout__flex"&gt;
+            &lt;div class="c-layout__item c-layout__item-100"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="c-layout__item c-layout__item-50"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-50"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="c-layout__item c-layout__item-25"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-25"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-25"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-25"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="c-layout__item c-layout__item-20"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-20"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-20"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-20"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="c-layout__item c-layout__item-20"&gt;
+              &lt;div class="responsiveBox"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+        </code>
+      </pre>
+      <div class="c-layout__flex">
+        <div class="c-layout__item c-layout__item-100"><div class="responsiveBox"></div></div>
+
+        <div class="c-layout__item c-layout__item-50"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-50"><div class="responsiveBox"></div></div>
+
+        <div class="c-layout__item c-layout__item-25"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-25"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-25"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-25"><div class="responsiveBox"></div></div>
+
+        <div class="c-layout__item c-layout__item-20"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-20"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-20"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-20"><div class="responsiveBox"></div></div>
+        <div class="c-layout__item c-layout__item-20"><div class="responsiveBox"></div></div>
+      </div>
+
+
+      <h3>Ratio</h3>
+      <div class="c-ratio c-ratio--16:9">
+          <iframe src="https://www.youtube.com/embed/9RBzsjga73s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <h3>Table</h3>
+      <div class="c-table__responsive">
+        <table class="c-table">
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Example Row</td>
+              <td>Example Row</td>
+              <td>Example Row</td>
+              <td>Example Row</td>
+            </tr>
+            <tr>
+              <td>Example Row</td>
+              <td>Example Row</td>
+              <td>Example Row</td>
+              <td>Example Row</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Example Footer</td>
+              <td>Example Footer</td>
+              <td>Example Footer</td>
+              <td>Example Footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <h3>Burger</h3>
+
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+
+          &lt;button class="u-burger"&gt;
+            &lt;span class="u-burger__icon"&gt;&lt;/span&gt;
+            &lt;span class="u-hidden-visually"&gt;Burger Navigation&lt;/span&gt;
+          &lt;/button&gt;
+
+          &lt;button class="u-burger is-active"&gt;
+            &lt;span class="u-burger__icon"&gt;&lt;/span&gt;
+            &lt;span class="u-hidden-visually"&gt;Burger Navigation&lt;/span&gt;
+          &lt;/button&gt;
+
+        </code>
+      </pre>
+
+      <h3>Full Click</h3>
+
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+
+          &lt;div class="u-fullClick__container"&gt;
+
+            &lt;img src="https://picsum.photos/200/300" /&gt;
+            &lt;img src="https://picsum.photos/200/300" alt="All images need alt text" /&gt;
+            &lt;a href="#" target="_blank" title="Link Title" class="u-fullClick"&gt;&lt;span&gt;Click Text information&lt;/span&gt;&lt;/a&gt;
+          &lt;/div&gt;
+
+        </code>
+      </pre>
+
+      <div class="u-fullClick__container">
+
+        <img src="https://picsum.photos/200/300" />
+        <img src="https://picsum.photos/200/300" alt="All images need alt text" />
+        <a href="#" target="_blank" title="Link Title" class="u-fullClick"><span>Click Text information</span></a>
+      </div>
+
+      <h3>Hidden</h3>
+
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+
+          &lt;div class=""&gt;
+            &lt;p class="u-hidden-visually"&gt;This is some text&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="u-hidden"&gt;
+            &lt;p&gt;This is some text&lt;/p&gt;
+          &lt;/div&gt;
+
+        </code>
+      </pre>
+
+      <div class="">
+        <p class="u-hidden-visually">This is some text</p>
+      </div>
+
+      <div class="u-hidden">
+        <p>This is some text</p>
+      </div>
+
+      <h3>Responsive Hide</h3>
+
+      <pre rel="CSS" class="language-css" data-line="">
+        <code markup="tt">
+
+          &lt;div class=""&gt;
+            &lt;p class="u-hide-from@mobile"&gt;Hidden from Mobile&lt;/p&gt;
+            &lt;p class="u-hide-from@tablet"&gt;Hidden from Tablet&lt;/p&gt;
+            &lt;p class="u-hide-from@desktop"&gt;Hidden from Desktop&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=""&gt;
+            &lt;p class="u-hide-until@mobile"&gt;Hidden until Mobile&lt;/p&gt;
+            &lt;p class="u-hide-until@tablet"&gt;Hidden until Tablet&lt;/p&gt;
+            &lt;p class="u-hide-until@desktop"&gt;Hidden until Desktop&lt;/p&gt;
+          &lt;/div&gt;
+
+        </code>
+      </pre>
+
+      <div class="">
+        <p class="u-hide-from@mobile">Hidden from Mobile</p>
+        <p class="u-hide-from@tablet">Hidden from Tablet</p>
+        <p class="u-hide-from@desktop">Hidden from Desktop</p>
+      </div>
+
+      <div class="">
+        <p class="u-hide-until@mobile">Hidden until Mobile</p>
+        <p class="u-hide-until@tablet">Hidden until Tablet</p>
+        <p class="u-hide-until@desktop">Hidden until Desktop</p>
+      </div>
+
     </main>
     <script src="dist/bundle.js"></script>
   </body>
