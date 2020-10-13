@@ -1,26 +1,24 @@
 {
   "name": "@agilepixel/poise",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "main": "style.scss",
   "files": [
+    "block/*",
+    "block/**/*",
+    "composition/*",
+    "composition/**/*",
+    "elements/*",
+    "elements/**/*",
+    "print/*",
+    "print/**/*",
     "settings/*",
     "settings/**/*",
     "tools/*",
     "tools/**/*",
-    "generic/*",
-    "generic/**/*",
-    "elements/*",
-    "elements/**/*",
-    "objects/*",
-    "objects/**/*",
-    "components/*",
-    "components/**/*",
-    "utilities/*",
-    "utilities/**/*",
-    "print/*",
-    "print/**/*"
+    "utility/*",
+    "utility/**/*"
   ],
-  "description": "Standing on the shoulders of giants; bringing together the amazing work from @CSSWizard-inuitcss, sass-mq and various other scss snippets and utilities",
+  "description": "Based on principals from CUBE css, as well as inuitcss and other masters of the language.",
   "scripts": {
     "build": "webpack --mode=production",
     "test": "webpack --mode=production --hide-modules"
