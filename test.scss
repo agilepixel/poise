@@ -48,10 +48,6 @@ $inuit-ratios: (
   --fontSizeXXlarge: #{em(28)};
   --fontSizeXXXlarge: #{em(32)};
 
-  /*
-  * #DEFAULT
-  */
-
   --vh: (1);
 
   /**
@@ -80,6 +76,23 @@ $inuit-ratios: (
   --depthHigher: 20;
   --depthHighest: 100;
   --depthAboveAll: 150;
+
+  /**
+  *   #COLOURS
+  */
+
+  --colourBase: #000000;
+  --colourDark: #000000;
+  --colourLight: #ffffff;
+  --colourBackground: #ffffff;
+  --colourContent: #000000;
+  --colourDisabled: #999999;
+  --colourLink: #000000;
+  --colourHover: #000000;
+  --colourActive: #000000;
+  --colourVisited: #000000;
+  --colourErrorBackground: #ff7474;
+  --colourErrorText: #bb0000;
 }
 
 /* CODE BLOCKS */
