@@ -2,11 +2,16 @@
    #TABLE
    ========================================================================== */
 
+.c-table__responsive {
+  max-width: 100%;
+  overflow: auto;
+}
+
 /**
  * A simple object for manipulating the structure of HTML `table`s.
  */
 
-.o-table {
+.c-table {
   width: 100%;
 }
 
@@ -21,6 +26,6 @@
  * https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout#Values
  */
 
-.o-table--fixed {
+.c-table--fixed {
   table-layout: fixed;
 }

@@ -7,7 +7,14 @@
 
 // Standardise some UI treatments.
 
-$inputBorder: 1px solid var(--colourDark) !default;
+$input: (
+  border: 1px solid var(--colourDark),
+  textColour: var(--colourDark),
+  background: var(--colourDark),
+  padding: var(--spacingBase),
+  margin: var(--spacingBase),
+  font-size: var(--fontSizeNormal),
+) !default;
 
 /**
   *   #DEFAULT VARIABLES
@@ -33,27 +40,6 @@ $burger: (
 $inuit-ratios: (
   '16\\:9': (
     16: 9,
-  ),
-) !default;
-
-/**
-  *   #DEPTH
-  */
-
-@function depth($depth, $default: 'base') {
-  @return map-get(map-get($depths, $depth), $default);
-}
-
-$depths: (
-  site: (
-    base: 1,
-    behind: -1,
-    zero: 0,
-    above: 10,
-    high: 15,
-    higher: 20,
-    highest: 100,
-    aboveAll: 150,
   ),
 ) !default;
 

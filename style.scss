@@ -1,61 +1,88 @@
-/* ==========================================================================
-   POISE
-   ========================================================================== */
-
-// SETTINGS
-@import 'settings/settings.global';
-@import 'settings/settings.fonts';
+/*
+ * INIT
+ */
 @import 'settings/settings.responsive';
 
-// EXTERNAL DEPENDANCIES
+/*
+ * THIRD PARTY RESOURCES
+ */
 @import '~sass-mq';
+@import '~modern-css-reset';
 @import '~sass-burger';
 
-// TOOLS
-@import 'tools/tools.getVW';
+/*
+ * TOOLS
+ */
+@import 'tools/tools.getEM';
 @import 'tools/tools.headings';
 @import 'tools/tools.hidden';
 @import 'tools/tools.linkColours';
 @import 'tools/tools.pseudoElement';
 @import 'tools/tools.inputDefault';
 
-// GENERIC
-@import '~normalize.css';
-@import 'generic/generic.reset';
-@import 'generic/generic.box-sizing';
-@import 'generic/generic.shared';
+/*
+ * SETTINGS
+ */
 
-// ELEMENTS
-@import 'elements/elements.blockquote';
-@import 'elements/elements.code';
+@import 'settings/settings.colours';
+@import 'settings/settings.fonts';
+@import 'settings/settings.global';
+
+/*
+ * ELEMENTS
+ *
+ */
+
 @import 'elements/elements.headings';
-@import 'elements/elements.horizontalRule';
 @import 'elements/elements.iframe';
 @import 'elements/elements.images';
+@import 'elements/elements.input';
 @import 'elements/elements.links';
-@import 'elements/elements.lists';
 @import 'elements/elements.page';
-@import 'elements/elements.table';
 
-// OBJECTS
-@import 'objects/objects.burger';
-@import 'objects/objects.forms';
-@import 'objects/objects.fullClick';
-@import 'objects/objects.grid';
-@import 'objects/objects.list-bare';
-@import 'objects/objects.list-inline';
-@import 'objects/objects.ratio';
-@import 'objects/objects.table';
-@import 'objects/objects.wrapper';
-@import 'objects/objects.skipTo';
+/*
+ * CUBE
+ * https://piccalil.li/blog/cube-css/
+ */
 
-// COMPONENTS
+/*
+ * C - Composition
+ * The composition of this layout is what controls
+ * the overall layout and rhythm of elements.
+ * Think of the composition as a skeleton.
+ */
 
-// UTILITIES
+@import 'composition/composition.fonts';
+@import 'composition/composition.layout';
+@import 'composition/composition.layoutGrid';
+@import 'composition/composition.ratio';
+@import 'composition/composition.table';
 
-@import 'utilities/utilities.headings';
-@import 'utilities/utilities.hide';
-@import 'utilities/utilities.responsiveHide';
+/*
+ * C - Composition
+ * The composition of this layout is what controls
+ * the overall layout and rhythm of elements.
+ * Think of the composition as a skeleton.
+ */
+
+@import 'utility/utility.burger';
+@import 'utility/utility.fullClick';
+@import 'utility/utility.headings';
+@import 'utility/utility.hidden';
+@import 'utility/utility.hide';
+@import 'utility/utility.wrapper';
+
+/*
+ * B - Block
+ * A block is your building block or your component.
+ */
+
+@import 'block/block.skipTo';
+
+/*
+ * E - Exception
+ * These are little variations to a block.
+ */
 
 @media print {
   @import 'print/print.base';

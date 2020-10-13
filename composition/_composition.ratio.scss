@@ -25,7 +25,7 @@
  * 1. Default is a 1:1 ratio (i.e. a perfect square).
  */
 
-.o-ratio {
+.c-ratio {
   position: relative;
   display: block;
 
@@ -37,11 +37,11 @@
   }
 }
 
-.o-ratio__content,
-.o-ratio > iframe,
-.o-ratio > embed,
-.o-ratio > object,
-.o-ratio > video {
+.c-ratio__content,
+.c-ratio > iframe,
+.c-ratio > embed,
+.c-ratio > object,
+.c-ratio > video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -71,7 +71,7 @@
       @error "`#{$consequent}` needs to be a number.";
     }
 
-    .o-ratio--#{$ratio-name}::before {
+    .c-ratio--#{$ratio-name}::before {
       padding-bottom: ($consequent/$antecedent) * 100%;
     }
   }
@@ -85,8 +85,8 @@
  * Contains the image to the boundaries, without cropping or stretching it.
  */
 
-.o-ratio--img-contain {
-  > .o-ratio__content {
+.c-ratio--img-contain {
+  > .c-ratio__content {
     height: auto;
     margin: auto;
     max-height: 100%;
