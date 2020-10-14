@@ -11,26 +11,10 @@
  *
  */
 
-.u-h1 {
-  font-size: var(--sizeH1);
-}
+$headings: 1, 2, 3, 4, 5, 6;
 
-.u-h2 {
-  font-size: var(--sizeH2);
-}
-
-.u-h3 {
-  font-size: var(--sizeH3);
-}
-
-.u-h4 {
-  font-size: var(--sizeH4);
-}
-
-.u-h5 {
-  font-size: var(--sizeH5);
-}
-
-.u-h6 {
-  font-size: var(--sizeH6);
+@each $heading in $headings {
+  .u-h#{$heading} {
+    font-size: var(--sizeH#{$heading});
+  }
 }
