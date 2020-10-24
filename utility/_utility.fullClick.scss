@@ -8,7 +8,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: depth(site, above);
+  z-index: var(--depthAbove);
   cursor: pointer;
   display: block;
 
