@@ -5,7 +5,7 @@
 .c-layout {
   &__grid {
     display: grid;
-    gap: var(--spaceGrid) var(--spaceGrid);
+    gap: s(Grid) s(Grid);
 
     @each $column in $columnNumber {
       &--column-#{$column} {
@@ -27,10 +27,10 @@
   &__flex {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 var(--spaceGridNegative);
+    margin: 0 0 0 s(GridNegative);
 
     .c-layout__item {
-      padding-left: var(--spaceGrid);
+      padding-left: s(Grid);
       flex-grow: 1;
     }
 

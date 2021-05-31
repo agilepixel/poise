@@ -15,7 +15,7 @@ $spacing: Half, Base, One, Two, Double, Triple, Quad !default;
       @each $direction, $value in $directions {
         $spaceType: #{to-lower-case(#{$space})};
         &--#{$direction}-#{$spaceType} {
-          margin-#{$direction}: var(--space#{$space});
+          margin-#{$direction}: s(#{$space});
         }
       }
     }

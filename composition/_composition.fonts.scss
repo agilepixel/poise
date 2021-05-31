@@ -1,35 +1,35 @@
 .c-font {
   &__size {
     &--smallest {
-      font-size: var(--fontSizeSmallest);
+      font-size: f(Smallest);
     }
 
     &--small {
-      font-size: var(--fontSizeSmall);
+      font-size: f(Small);
     }
 
     &--normal {
-      font-size: var(--fontSizeNormal);
+      font-size: f(Normal);
     }
 
     &--medium {
-      font-size: var(--fontSizeMedium);
+      font-size: f(Medium);
     }
 
     &--large {
-      font-size: var(--fontSizeLarge);
+      font-size: f(Large);
     }
 
     &--xlarge {
-      font-size: var(--fontSizeXlarge);
+      font-size: f(Xlarge);
     }
 
     &--xxlarge {
-      font-size: var(--fontSizeXXlarge);
+      font-size: f(XXlarge);
     }
 
     &--xxxlarge {
-      font-size: var(--fontSizeXXXlarge);
+      font-size: f(XXXlarge);
     }
   }
 
@@ -47,10 +47,10 @@
 
   &__colour {
     &--light {
-      color: var(--colourLight);
+      color: c(Light);
     }
     &--dark {
-      color: var(--colourDark);
+      color: c(Dark);
     }
   }
 
@@ -94,15 +94,15 @@
 
   &__margin {
     &--half {
-      margin-bottom: var(--spacingHalf);
+      margin-bottom: s(Half);
     }
 
     &--one {
-      margin-bottom: var(--spacingHalf);
+      margin-bottom: s(Half);
     }
 
     &--double {
-      margin-bottom: var(--spacingDouble);
+      margin-bottom: s(Double);
     }
 
     &--zero {

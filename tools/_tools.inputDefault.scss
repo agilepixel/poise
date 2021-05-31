@@ -21,6 +21,6 @@
   }
 
   &:disabled {
-    -webkit-text-fill-color: var(--colourDisabled);
+    -webkit-text-fill-color: c(Disabled);
   }
 }

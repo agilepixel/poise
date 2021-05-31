@@ -7,25 +7,25 @@
 }
 
 h1 {
-  font-size: var(--fontSizeH1);
+  font-size: f(H1);
 }
 
 h2 {
-  font-size: var(--fontSizeH2);
+  font-size: f(H2);
 }
 
 h3 {
-  font-size: var(--fontSizeH3);
+  font-size: f(H3);
 }
 
 h4 {
-  font-size: var(--fontSizeH4);
+  font-size: f(H4);
 }
 
 h5 {
-  font-size: var(--fontSizeH5);
+  font-size: f(H5);
 }
 
 h6 {
-  font-size: var(--fontSizeH6);
+  font-size: f(H6);
 }

@@ -8,12 +8,12 @@
 // Standardise some UI treatments.
 
 $input: (
-  border: 1px solid var(--colourDark),
-  textColour: var(--colourDark),
-  background: var(--colourDark),
-  padding: var(--spacingBase),
-  margin: var(--spacingBase),
-  font-size: var(--fontSizeNormal),
+  border: 1px solid c(Dark),
+  textColour: c(Dark),
+  background: c(Dark),
+  padding: s(Base),
+  margin: s(Base),
+  font-size: f(Normal),
 ) !default;
 
 /**
@@ -28,7 +28,7 @@ $burger: (
   width: 30px,
   height: 5px,
   gutter: 3px,
-  colour: var(--colourDark),
+  colour: c(Dark),
   borderRadius: 0,
   transitionDuration: 0.3s,
 ) !default;

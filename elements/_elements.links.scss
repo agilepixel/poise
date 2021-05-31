@@ -3,7 +3,7 @@
   */
 
 a {
-  @include link-colors(var(--colourLink), var(--colourHover), var(--colourLink), var(--colourVisited), var(--colourActive));
+  @include link-colors(c(Link), c(Hover), c(Link), c(Visited), c(Active));
 
   text-decoration: none;
   transition: color 0.3s ease;

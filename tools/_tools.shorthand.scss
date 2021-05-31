@@ -1,0 +1,15 @@
+@function c($name) {
+  @return var(--colour#{$name});
+}
+
+@function s($name) {
+  @return var(--space#{$name});
+}
+
+@function d($name) {
+  @return var(--depth#{$name});
+}
+
+@function f($name) {
+  @return var(--fontSize#{$name});
+}

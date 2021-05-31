@@ -8,7 +8,7 @@ html {
   line-height: map-get($fontDefaults, line-height);
   overflow-y: scroll;
   min-height: 100%;
-  background-color: var(--colourBackground);
-  color: var(--colourContent);
+  background-color: c(Background);
+  color: c(Content);
   font-weight: 400;
 }
