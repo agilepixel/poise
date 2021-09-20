@@ -2,6 +2,8 @@
   *   #Get EM value from PX
   */
 
+@use "sass:math";
+
 @function em($pixels, $context: 16, $type: em) {
-  @return #{$pixels/$context}#{$type};
+  @return #{math.div($pixels, $context)}#{$type};
 }
