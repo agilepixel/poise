@@ -25,7 +25,7 @@
  * 1. Default is a 1:1 ratio (i.e. a perfect square).
  */
 
-@use "sass:math";
+@use 'sass:math';
 
 .c-ratio {
   position: relative;
@@ -78,6 +78,7 @@
       padding-bottom: math.div($consequent, $antecedent) * 100%;
     }
   }
+
   @each $breakpoint, $value in $gridBreakpoints {
     @include mq($until: #{$value}) {
       @each $antecedent, $consequent in $ratio-value {
