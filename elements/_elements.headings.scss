@@ -1,9 +1,10 @@
+@use "sass:map";
 /**
   *   #HEADINGS
   */
 
 @include headings() {
-  font-weight: map-get($fontDefaults, weight);
+  font-weight: map.get($fontDefaults, weight);
 }
 
 h1 {
