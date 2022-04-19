@@ -1,6 +1,8 @@
-/* ==========================================================================
-   #HIDE
-   ========================================================================== */
+/**
+  *   #HIDDEN ELEMENTS
+  */
+
+@use '../tools' as *;
 
 /**
  * Hide only visually, but have it available for screen readers:
@@ -8,7 +10,7 @@
  */
 
 .u-hidden-visually {
-  @include hidden-visually();
+  @include hidden.hidden-visually();
 }
 
 /**

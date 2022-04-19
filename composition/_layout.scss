@@ -1,9 +1,9 @@
 /**
-  *   #LAYOUT - FLEX
+  *   LAYOUT SPACING
   */
 
-$directions: top, left, right, bottom !default;
-$spacing: Half, Base, One, Two, Double, Triple, Quad !default;
+@use '../settings' as variables;
+@use '../tools' as *;
 
 .c-layout {
   &__space {
@@ -11,8 +11,8 @@ $spacing: Half, Base, One, Two, Double, Triple, Quad !default;
       margin: 0 auto;
     }
 
-    @each $space, $value in $spacing {
-      @each $direction, $value in $directions {
+    @each $space, $value in variables.$spacing {
+      @each $direction, $value in variables.$directions {
         $spaceType: #{to-lower-case(#{$space})};
         &--#{$direction}-#{$spaceType} {
           margin-#{$direction}: s(#{$space});

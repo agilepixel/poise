@@ -1,0 +1,25 @@
+/**
+  *   #RESPONSIVE HIDE
+  */
+
+@use '../settings' as variables;
+@use 'sass-mq' as *;
+/**
+ * Example usage:
+ * <div class="u-hide-from@tablet">
+ * <div class="u-hide-until@tablet">
+ */
+
+@each $breakpointName, $breakpointValue in variables.$gridBreakpoints {
+  .u-hide-from#{variables.$breakpoint-separator}#{$breakpointName} {
+    @include mq($from: #{$breakpointName}) {
+      display: none;
+    }
+  }
+
+  .u-hide-until#{variables.$breakpoint-separator}#{$breakpointName} {
+    @include mq($until: #{$breakpointName}) {
+      display: none;
+    }
+  }
+}

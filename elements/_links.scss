@@ -1,0 +1,13 @@
+/**
+  *   #LINKS
+  */
+
+@use '../settings' as variables;
+@use '../tools' as *;
+
+a {
+  @include link-colours(c(Link), c(Hover), c(Link), c(Visited), c(Active));
+
+  text-decoration: none;
+  transition: color 0.3s ease;
+}

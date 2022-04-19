@@ -1,3 +1,7 @@
+/**
+  *   SHORTHAND FOR VARIABLE NAMES
+  */
+
 @function c($name) {
   @return var(--colour#{$name});
 }

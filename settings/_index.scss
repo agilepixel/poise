@@ -1,0 +1,97 @@
+/**
+  *   #ALL BASE VARIABLES
+  */
+
+$fontDefaults: (
+  weight: 400,
+  line-height: 1,
+  sansSerif: var(--fontFamilySanSerif),
+  serif: var(--fontFamilySerif),
+) !default;
+
+$input: (
+  border: 1px solid var(--colourDark),
+  radius: 0,
+  textColour: var(--colourDark),
+  background: var(--colourDark),
+  padding: var(--spaceBase),
+  margin: var(--spaceBase),
+  font-size: f(Normal),
+) !default;
+
+$wrapper: (
+  maxWidth: 1280px,
+  width: 90%,
+) !default;
+
+$burger: (
+  width: 30px,
+  height: 5px,
+  gutter: 3px,
+  colour: var(--colourDark),
+  borderRadius: 0,
+  transitionDuration: 0.3s,
+) !default;
+
+/**
+  *   #RATIOS
+  */
+
+$inuit-ratios: (
+  '16\\:9': (
+    16: 9,
+  ),
+) !default;
+
+/**
+  *   #INPUT TYPES
+  */
+
+$inputTypes: 'color', 'date', 'datetime', 'datetime-local', 'email', 'file', 'hidden', 'image', 'month', 'number', 'password', 'range', 'search', 'tel', 'text',
+  'time', 'url', 'week' !default;
+
+/**
+  *   #RESPONSIVE
+  */
+
+$breakpoint-separator: \@ !default;
+
+/**
+  *   #GRID
+  */
+
+$gridBreakpoints: (
+  tablet: tablet,
+  tabletPortrait: tabletPortrait,
+  desktop: desktop,
+  wide: wide,
+  mobile: mobile,
+) !default;
+
+/**
+  *   #COLUMN SIZES
+  */
+
+$columnSizes: 20, 25, 33.33334, 40, 50, 60, 66.66667, 75, 80, 100 !default;
+
+/**
+  *   #NUMBER OF COLUMNS
+  */
+
+$columnOptions: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 !default;
+
+/**
+  *   #NUMBER OF COLUMNS
+  */
+
+$spanOptions: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 !default;
+
+/**
+  *   #SPACING DIRECTIONS
+  */
+$directions: top, left, right, bottom !default;
+
+/**
+  *   #SPACING OPTIONS
+  */
+$spacing: Half, Base, One, Two, Double, Triple, Quad !default;

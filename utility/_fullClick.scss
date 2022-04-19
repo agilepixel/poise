@@ -2,6 +2,8 @@
   *   #FULLCLICK
   */
 
+@use 'tools/hidden' as hidden;
+
 .u-fullClick {
   position: absolute;
   width: 100%;
@@ -13,7 +15,7 @@
   display: block;
 
   span {
-    @include hidden-visually;
+    @include hidden.hidden-visually;
   }
 
   br {

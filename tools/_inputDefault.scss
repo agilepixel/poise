@@ -1,0 +1,33 @@
+/**
+  *   CREATE DEFAULT INPUTS
+  */
+
+@use 'sass:map';
+@use '../settings' as variables;
+
+@mixin inputDefault {
+  background: map.get(variables.$input, background);
+  width: 100%;
+  padding: map.get(variables.$input, padding);
+  border-radius: map.get(variables.$input, radius);
+  border: map.get(variables.$input, border);
+  color: map.get(variables.$input, textColour);
+  margin: map.get(variables.$input, margin);
+  display: block;
+  font-weight: normal;
+  position: relative;
+
+  &::placeholder {
+    color: map.get(variables.$input, textColour);
+    font-weight: inherit;
+    opacity: 1;
+  }
+
+  &:focus {
+    color: map.get(variables.$input, textColour);
+  }
+
+  &:disabled {
+    -webkit-text-fill-color: c(Disabled);
+  }
+}

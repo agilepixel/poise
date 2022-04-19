@@ -1,10 +1,8 @@
-@mixin link-colors(
-  $base,
-  $hover: false,
-  $link: false,
-  $visited: false,
-  $active: false
-) {
+/**
+  *   LINK COLOURS
+  */
+
+@mixin link-colors($base, $hover: false, $link: false, $visited: false, $active: false) {
   color: $base;
 
   &:link {
@@ -40,4 +38,8 @@
       color: $base;
     }
   }
+}
+
+@mixin link-colours($args...) {
+  @include link-colors($args...);
 }

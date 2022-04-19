@@ -1,0 +1,13 @@
+/**
+  *   #WRAPPER
+  */
+
+@use 'sass:map';
+@use '../settings' as variables;
+
+.u-wrapper {
+  max-width: map.get(variables.$wrapper, maxWidth);
+  width: map.get(variables.$wrapper, width);
+  margin: 0 auto;
+  position: relative;
+}

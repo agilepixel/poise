@@ -1,31 +1,10 @@
-/* ==========================================================================
-   #RATIO
-   ========================================================================== */
-
-// A list of aspect ratios that get generated as modifier classes.
-// You should predefine it with only the ratios and names your project needs.
-//
-// The map keys are the strings used in the generated class names, and they can
-// follow any convention, as long as they are properly escaped strings. i.e.:
-//
-//   $inuit-ratios: (
-//     "2\\:1"         : (2:1),
-//     "4-by-3"        : (4:3),
-//     "full-hd"       : (16:9),
-//     "card-image"    : (2:3),
-//     "golden-ratio"  : (1.618:1) -> non-integers are okay
-//   ) !default;
-
 /**
- * Create ratio-bound content blocks, to keep media (e.g. images, videos) in
- * their correct aspect ratios.
- *
- * http://alistapart.com/article/creating-intrinsic-ratios-for-video
- *
- * 1. Default is a 1:1 ratio (i.e. a perfect square).
- */
+  *   RATIO
+  */
 
 @use 'sass:math';
+@use '../settings' as variables;
+@use 'sass-mq' as *;
 
 .c-ratio {
   position: relative;
@@ -64,7 +43,7 @@
  *
  */
 
-@each $ratio-name, $ratio-value in $inuit-ratios {
+@each $ratio-name, $ratio-value in variables.$inuit-ratios {
   @each $antecedent, $consequent in $ratio-value {
     @if (type-of($antecedent) != number) {
       @error "`#{$antecedent}` needs to be a number.";
@@ -79,10 +58,10 @@
     }
   }
 
-  @each $breakpoint, $value in $gridBreakpoints {
+  @each $breakpoint, $value in variables.$gridBreakpoints {
     @include mq($until: #{$value}) {
       @each $antecedent, $consequent in $ratio-value {
-        .c-ratio--#{$ratio-name}#{$breakpoint-separator}#{$breakpoint}::before {
+        .c-ratio--#{$ratio-name}#{variables.$breakpoint-separator}#{$breakpoint}::before {
           padding-bottom: math.div($consequent, $antecedent) * 100%;
         }
       }

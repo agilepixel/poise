@@ -1,10 +1,13 @@
-@use "sass:map";
 /**
   *   #HEADINGS
   */
 
+@use 'sass:map';
+@use '../settings' as variables;
+@use '../tools' as *;
+
 @include headings() {
-  font-weight: map.get($fontDefaults, weight);
+  font-weight: map.get(variables.$fontDefaults, weight);
 }
 
 h1 {

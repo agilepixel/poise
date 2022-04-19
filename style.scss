@@ -1,45 +1,32 @@
 /*
- * INIT
- */
-@import 'settings/settings.responsive';
-
-/*
  * THIRD PARTY RESOURCES
  */
-@import '~sass-mq';
-@import '~modern-css-reset';
-@import '~sass-burger';
 
-/*
- * TOOLS
- */
-@import 'tools/tools.shorthand';
-@import 'tools/tools.getEM';
-@import 'tools/tools.headings';
-@import 'tools/tools.hidden';
-@import 'tools/tools.linkColours';
-@import 'tools/tools.pseudoElement';
-@import 'tools/tools.inputDefault';
+@use '~modern-css-reset' as reset;
 
-/*
- * SETTINGS
- */
+$mq-breakpoints: (
+  mobile: 480px,
+  tabletPortrait: 768px,
+  tablet: 1024px,
+  desktop: 1366px,
+  wide: 1600px,
+) !default;
 
-@import 'settings/settings.fonts';
-@import 'settings/settings.global';
-@import 'settings/settings.responsive';
+@use 'sass-mq' as mq with (
+  $breakpoints: $mq-breakpoints
+);
 
 /*
  * ELEMENTS
  *
  */
 
-@import 'elements/elements.headings';
-@import 'elements/elements.iframe';
-@import 'elements/elements.images';
-@import 'elements/elements.input';
-@import 'elements/elements.links';
-@import 'elements/elements.page';
+@use 'elements/heading';
+@use 'elements/iframe';
+@use 'elements/images';
+@use 'elements/input';
+@use 'elements/links';
+@use 'elements/page';
 
 /*
  * CUBE
@@ -49,42 +36,38 @@
 /*
  * C - Composition
  * The composition of this layout is what controls
- * the overall layout and rhythm of elements.
- * Think of the composition as a skeleton.
+ * the overall layout and rhythm of
+ * Think of the composition
  */
 
-@import 'composition/composition.fonts';
-@import 'composition/composition.layout';
-@import 'composition/composition.layoutGrid';
-@import 'composition/composition.ratio';
-@import 'composition/composition.table';
+@use 'composition/fonts';
+@use 'composition/layout';
+@use 'composition/layoutGrid';
+@use 'composition/ratio';
+@use 'composition/table';
 
 /*
- * C - Composition
- * The composition of this layout is what controls
- * the overall layout and rhythm of elements.
- * Think of the composition as a skeleton.
+ * U - Utility
+ * A utility, in the context of CUBE CSS,
+ * is a CSS class that does one job and
+ * does that job well
  */
 
-@import 'utility/utility.burger';
-@import 'utility/utility.fullClick';
-@import 'utility/utility.headings';
-@import 'utility/utility.hidden';
-@import 'utility/utility.hide';
-@import 'utility/utility.wrapper';
+@use 'utility/burger';
+@use 'utility/fullClick';
+@use 'utility/hide';
+@use 'utility/wrapper';
 
 /*
  * B - Block
  * A block is your building block or your component.
  */
 
-@import 'block/block.skipTo';
+@use 'block/skipTo';
 
 /*
  * E - Exception
  * These are little variations to a block.
  */
 
-@media print {
-  @import 'print/print.base';
-}
+@use 'print/base';

@@ -1,0 +1,94 @@
+/**
+  *   LAYOUT GRID
+  */
+
+@use '../settings' as variables;
+@use '../tools' as *;
+@use 'sass-mq' as *;
+
+.c-layout {
+  &__grid {
+    display: grid;
+    gap: s(Grid) s(Grid);
+
+    @each $column in variables.$columnOptions {
+      &--column-#{$column} {
+        grid-template-columns: repeat(#{$column}, 1fr);
+      }
+    }
+
+    @each $breakpoint, $value in variables.$gridBreakpoints {
+      @include mq($until: #{$value}) {
+        @each $column in variables.$columnOptions {
+          &--column-#{$column}#{variables.$breakpoint-separator}#{$breakpoint} {
+            grid-template-columns: repeat(#{$column}, 1fr);
+          }
+        }
+      }
+    }
+
+    &--flush {
+      gap: 0;
+    }
+
+    &__item--span {
+      @each $column in variables.$spanOptions {
+        &-#{$column} {
+          grid-column: span #{$column};
+        }
+      }
+
+      @each $breakpoint, $value in variables.$gridBreakpoints {
+        @include mq($until: #{$value}) {
+          @each $column in variables.$spanOptions {
+            &-#{$column}#{variables.$breakpoint-separator}#{$breakpoint} {
+              grid-column: span #{$column};
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 s(GridNegative);
+
+    .c-layout__item {
+      padding-left: s(Grid);
+      flex-grow: 1;
+    }
+
+    // Different column sizes
+    @each $size in variables.$columnSizes {
+      $roundSize: floor($size);
+
+      .c-layout__item-#{$roundSize} {
+        flex-basis: $size * 1%;
+        max-width: $size * 1%;
+      }
+    }
+
+    @each $breakpoint, $value in variables.$gridBreakpoints {
+      @include mq($until: #{$value}) {
+        @each $size in variables.$columnSizes {
+          $roundSize: floor($size);
+
+          .c-layout__item-#{$roundSize}#{variables.$breakpoint-separator}#{$breakpoint} {
+            flex-basis: $size * 1%;
+            max-width: $size * 1%;
+          }
+        }
+      }
+    }
+
+    &--flush {
+      margin-left: 0;
+
+      & > .c-layout__item {
+        padding-left: 0;
+      }
+    }
+  }
+}
