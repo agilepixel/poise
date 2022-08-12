@@ -10,7 +10,7 @@
  */
 
 .u-hidden-visually {
-  @include hidden.hidden-visually();
+  @include hidden-visually();
 }
 
 /**

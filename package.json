@@ -1,6 +1,6 @@
 {
   "name": "@agilepixel/poise",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "main": "style.scss",
   "files": [
     "block/*",

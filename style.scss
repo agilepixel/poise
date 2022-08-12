@@ -3,14 +3,7 @@
  */
 
 @use '~modern-css-reset' as reset;
-
-$mq-breakpoints: (
-  mobile: 480px,
-  tabletPortrait: 768px,
-  tablet: 1024px,
-  desktop: 1366px,
-  wide: 1600px,
-) !default;
+@forward 'settings/index';
 
 @use 'sass-mq' as mq with (
   $breakpoints: $mq-breakpoints
@@ -56,6 +49,7 @@ $mq-breakpoints: (
 @use 'utility/burger';
 @use 'utility/fullClick';
 @use 'utility/hide';
+@use 'utility/hidden';
 @use 'utility/wrapper';
 
 /*
