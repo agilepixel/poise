@@ -5,6 +5,14 @@
 @use '~modern-css-reset' as reset;
 @forward 'settings/index';
 
+$mq-breakpoints: (
+  mobile: 480px,
+  tabletPortrait: 768px,
+  tablet: 1024px,
+  desktop: 1366px,
+  wide: 1600px,
+) !default;
+
 @use 'sass-mq' as mq with (
   $breakpoints: $mq-breakpoints
 );
