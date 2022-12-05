@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     margin: 0 0 0 s(GridNegative);
 
-    .c-layout__item {
+    .c-layout__grid__item {
       padding-left: s(Grid);
       flex-grow: 1;
     }
@@ -64,7 +64,7 @@
     @each $size in variables.$columnSizes {
       $roundSize: floor($size);
 
-      .c-layout__item-#{$roundSize} {
+      .c-layout__grid__item-#{$roundSize} {
         flex-basis: $size * 1%;
         max-width: $size * 1%;
       }
@@ -75,7 +75,7 @@
         @each $size in variables.$columnSizes {
           $roundSize: floor($size);
 
-          .c-layout__item-#{$roundSize}#{variables.$breakpoint-separator}#{$breakpoint} {
+          .c-layout__grid__item-#{$roundSize}#{variables.$breakpoint-separator}#{$breakpoint} {
             flex-basis: $size * 1%;
             max-width: $size * 1%;
           }
@@ -86,7 +86,7 @@
     &--flush {
       margin-left: 0;
 
-      & > .c-layout__item {
+      & > .c-layout__grid__item {
         padding-left: 0;
       }
     }
